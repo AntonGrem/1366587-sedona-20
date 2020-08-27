@@ -1,0 +1,202 @@
+.reasons__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.reasons__wrapper-backcolor {
+  background-color: @color-white;
+}
+
+.reasons__list,
+.reasons__sublist {
+  padding: 0;
+  margin: 0;
+}
+
+.reasons__item,
+.reasons__subitem {
+  list-style-type: none;
+}
+
+.reasons__item-backcolor {
+  background-color: @color-blue;
+}
+
+.reasons__item-backcolor::before {
+  content: url("../../img/triangular_mobile.svg");
+}
+
+.reasons__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 34px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-white;
+}
+
+.reasons__item-reason--first,
+.reasons__item-reason--second {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-white;
+  padding-left: 149px;
+  padding-right: 135px;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.reasons__item-reason--first::before,
+.reasons__item-reason--second::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  width: 10px;
+  height: 1px;
+  background-color: @color-white;
+}
+
+.reasons__item-reason--first::after,
+.reasons__item-reason--second::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  width: 10px;
+  height: 1px;
+  background-color: @color-white;
+}
+
+.reasons__item-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-white;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-bottom: 39px;
+}
+
+.reasons__subitem--house {
+  background-image: url("../../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position-x: 21px;
+  background-position-y: 26px;
+}
+
+.reasons__subitem--food {
+  background-image: url("../../img/icon-burger.svg.svg");
+  background-repeat: no-repeat;
+  background-position-x: 21px;
+  background-position-y: 26px;
+}
+
+.reasons__subitem--gift {
+  background-image: url("../../img/icon-gift.svg.svg");
+  background-repeat: no-repeat;
+  background-position-x: 21px;
+  background-position-y: 26px;
+}
+
+.reasons__subitem-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @color-black;
+}
+
+.reasons__subitem-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: @color-dark;
+}
+
+.reasons__subitem {
+  padding-top: 35px;
+  padding-left: 69px;
+  padding-right: 11px;
+  padding-bottom: 15px;
+}
+
+.reasons__item-backgroundcolor {
+  background-color: @color-blue;
+}
+
+.reasons__item-devil {
+  background-color: @color-grey;
+}
+
+.reasons__item--grey {
+  background-color: @color-grey;
+}
+
+.reasons__item-reason--third,
+.reasons__item-reason--fourth,
+.reasons__item-reason--fifth {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-black;
+  padding-left: 149px;
+  padding-right: 135px;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.reasons__item-reason--third::before,
+.reasons__item-reason--fourth::before,
+.reasons__item-reason--fifth::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  width: 10px;
+  height: 1px;
+  background-color: @color-black;
+}
+
+.reasons__item-reason--third::after,
+.reasons__item-reason--fourth::after,
+.reasons__item-reason--fifth::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  width: 10px;
+  height: 1px;
+  background-color: @color-black;
+}
+
+.reasons__item-title--color,
+.reasons__item-text--color {
+  color: @color-black;
+}
+
+.reasons__item--grey:not(:last-of-type) {
+  border-bottom: 1px solid @color-darker-grey;
+}
