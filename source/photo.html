@@ -26,12 +26,12 @@
             </button>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html" aria-label="Страница фотографий" title="Страница фотографий">
+            <a class="main-nav__link" href="" aria-label="Страница фотографий" title="Страница фотографий">
               <span class="main-nav__text">Фото и видео</span>
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="" aria-label="Форма отзывов" title="Форма отзывов">
+            <a class="main-nav__link" href="form.html" aria-label="Форма отзывов" title="Форма отзывов">
               <span class="main-nav__text">Форма Отзыва</span>
             </a>
           </li>
@@ -184,168 +184,15 @@
         <img class="intro__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона" aria-label="Седона">
         <div class="intro__shape"></div>
         <div class="intro__info">
-          <h2 class="intro__info-title">Оставьте свой отзыв</h2>
-          <p class="intro__info-text">Помогите нашим отелям стать лучше!
-            оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h2 class="intro__info-title">Фото и видео</h2>
+          <p class="intro__info-text">Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </div>
     </section>
-    <section class="feedback">
-      <div class="feedback__wrapper">
-        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form__fieldset-name">
-            <div class="form__fieldset-name-wrapper">
-              <label class="form__fieldset-label">
-                <span class="form__text">Фамилия*</span>
-                <input class="form__placeholder" type="text" placeholder="Петр" required name="first name">
-              </label>
-              <label class="form__fieldset-label">
-                <span class="form__text">Имя*</span>
-                <input class="form__placeholder form__placeholder-name" type="text" placeholder="Иванов" required
-                  name="name">
-              </label>
-              <label class="form__fieldset-label">
-                <span class="form__text">Отчество</span>
-                <input class="form__placeholder" type="text" placeholder="Александрович" name="second name">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset-contact">
-            <legend class="form__fieldset-title form__fieldset-title-desktop">
-              контактная информация
-            </legend>
-            <div class="form__fieldset-contact-wrapper">
-              <label class="form__fieldset-label form__fieldset-label-number">
-                <span class="form__text form__text-number">Контактный телефон*:</span>
-                <input class="form__placeholder" type="text" placeholder="Введите телефон" required name="phone_number">
-              </label>
-              <label class="form__fieldset-label form__fieldset-label-mail">
-                <span class="form__text form__text-mail">Электронная почта*:</span>
-                <input class="form__placeholder" type="text" placeholder="Введите e-mail" required name="email">
-              </label>
-              </button>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset-impressions">
-            <legend class="form__fieldset-title">
-              ВАше Общее впечатление:
-            </legend>
-            <div class="form__fieldset-impressions-wrapper">
-              <label class="form__fieldset-impressions-label">
-                <input class="form__fieldset-impressions-radio" type="radio" name="chouse" checked>
-                <span class="fake-radio"></span>
-                <span class="form__fieldset-impressions-text">
-                  Скорее положительное
-                </span>
-              </label>
-              <label class="form__fieldset-impressions-label">
-                <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
-                <span class="fake-radio"></span>
-                <span class="form__fieldset-impressions-text">
-                  Скорее отрицательное
-                </span>
-              </label>
-              <label class="form__fieldset-impressions-label">
-                <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
-                <span class="fake-radio"></span>
-                <span class="form__fieldset-impressions-text">
-                  Затрудняюсь ответить
-                </span>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset-attractions">
-            <legend class="form__fieldset-title">
-              посещенные достопримечательности:
-            </legend>
-            <div class="form__fieldset-attractions-wrapper">
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="shark" checked>
-                <span class="fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Мост Дьявола
-                </span>
-              </label>
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" checked name="burn" checked>
-                <span class="fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Гора-Колокол
-                </span>
-              </label>
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="chucknorris">
-                <span class="fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Слайд-парк
-                </span>
-              </label>
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="souvenir">
-                <span class="fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Красные скалы
-                </span>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset-emotion">
-            <legend class="form__title-emotion">
-              ОПИШИТЕ СВОИ ЭМОЦИИ
-              <textarea class="form__emotion-textarea" name="emotion-text" wrap="soft"
-                placeholder="Опишите подробно все свои восторги"></textarea>
-            </legend>
-          </fieldset>
-          <div class="form__button-wrapper">
-            <button class="form__button">
-              <span class="form__button-text">
-                ОТПРАВИТЬ ОТЗЫВ
-              </span>
-            </button>
-            <span class="username__text-desktop"><span class="username__text-star">*</span>— обязательные для
-              заполнения поля</span>
-          </div>
-        </form>
-        </form>
-      </div>
-    </section>
-    <section class="system-messages">
-      <div class="system-messages__wrapper">
-        <div class="system-messages__wrapper-good system-messages__wrapper-good--uncative">
-          <div class="system-messages__info">
-            <h3 class="system-messages__title">
-              Ваш отзыв отправлен!
-            </h3>
-            <p class="systems-messages__text">
-              Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-              В ближайшее время мы опубликуем его на сайте.
-            </p>
-          </div>
-          <div class="system-messages__button-wrapper">
-            <button class="system-messages__button" type="button">
-              <span class="system-messages__button-text">
-                ЗАКРЫТЬ ОКНО
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="system-messages__wrapper-error system-messages__wrapper-error--unactive">
-          <div class="system-messages__info">
-            <h3 class="system-messages__title">
-              Что-то пошло не так!
-            </h3>
-            <p class="systems-messages__text">
-              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-            </p>
-          </div>
-          <div class="system-messages__button-wrapper">
-            <button class="system-messages__button" type="button">
-              <span class="system-messages__button-text">
-                OK
-              </span>
-            </button>
-          </div>
-        </div>
+    <section class="photos">
+      <div class="photos_wrapper">
+
       </div>
     </section>
   </main>
