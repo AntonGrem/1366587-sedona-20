@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Main Sedona</title>
+  <title>Form Sedona</title>
 </head>
 
 <body class="page-body">
@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="" aria-label="Главная страница" title="Главная страница">
+            <a class="main-nav__link" href="index.html" aria-label="Главная страница" title="Главная страница">
               <span class="main-nav__text">Главная</span>
             </a>
             <button class="main-nav--closed" type="button">
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html" aria-label="Форма отзывов" title="Форма отзывов">
+            <a class="main-nav__link" href="" aria-label="Форма отзывов" title="Форма отзывов">
               <span class="main-nav__text">Форма Отзыва</span>
             </a>
           </li>
@@ -179,92 +179,173 @@
     <section class="intro">
       <div class="intro__wrapper">
         <h1 class="visually-hidden">
-          Добро пожаловать в великолепную седону
+          Седона
         </h1>
-        <img class="intro__picture" src="img/welcome_sedona_mobile.svg" alt="Добро пожаловать в великолепную седону"
-          aria-label="Добро пожаловать в великолепную седону">
+        <img class="intro__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона" aria-label="Седона">
         <div class="intro__shape"></div>
         <div class="intro__info">
-          <h2 class="intro__info-title">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</h2>
-          <p class="intro__info-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h2 class="intro__info-title">Оставьте свой отзыв</h2>
+          <p class="intro__info-text">Помогите нашим отелям стать лучше!
+            оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </div>
     </section>
-    <section class="reasons">
-      <div class="reasons__wrapper">
-        <ul class="reasons__list">
-          <li class="reasons__item">
-            <div class="reasons__item-backcolor">
-              <h3 class="reasons__item-title">Настоящий городок</h3>
-              <span class="reasons__item-reason--first"> №1 </span>
-              <p class="reasons__item-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form__fieldset-name">
+            <div class="form__fieldset-name-wrapper">
+              <label class="form__fieldset-label">
+                <span class="form__text">Фамилия*</span>
+                <input class="form__placeholder" type="text" placeholder="Петр" required name="first name">
+              </label>
+              <label class="form__fieldset-label">
+                <span class="form__text">Имя*</span>
+                <input class="form__placeholder form__placeholder-name" type="text" placeholder="Иванов" required
+                  name="name">
+              </label>
+              <label class="form__fieldset-label">
+                <span class="form__text">Отчество</span>
+                <input class="form__placeholder" type="text" placeholder="Александрович" name="second name">
+              </label>
             </div>
-            <div class="reasons__item-ranch"></div>
-            <ul class="reasons__sublist">
-              <li class="reasons__subitem">
-                <h4 class="reasons__subitem-title">Жильё</h4>
-                <p class="reasons__subitem-text"> Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="reasons__subitem">
-                <h4 class="reasons__subitem-title">Еда</h4>
-                <p class="reasons__subitem-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="reasons__subitem">
-                <h4 class="reasons__subitem-title">Сувениры </h4>
-                <p class="reasons__subitem-text">Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="reasons__item">
-            <div class="reasons__item-canyon"></div>
-            <div class="reasons__item-backcolor">
-              <h3 class="reasons__item-title">Там есть
-                Мост дьявола</h3>
-              <span class="reasons__item-reason--second"> №2 </span>
-              <p class="reasons__item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </fieldset>
+          <fieldset class="form__fieldset-contact">
+            <legend class="form__fieldset-title form__fieldset-title-desktop">
+              контактная информация
+            </legend>
+            <div class="form__fieldset-contact-wrapper">
+              <label class="form__fieldset-label form__fieldset-label-number">
+                <span class="form__text form__text-number">Контактный телефон*:</span>
+                <input class="form__placeholder" type="text" placeholder="Введите телефон" required name="phone_number">
+              </label>
+              <label class="form__fieldset-label form__fieldset-label-mail">
+                <span class="form__text form__text-mail">Электронная почта*:</span>
+                <input class="form__placeholder" type="text" placeholder="Введите e-mail" required name="email">
+              </label>
+              </button>
             </div>
-          </li>
-          <li class="reasons__item">
-            <h3 class="reasons__item-title">Небольшая площадь</h3>
-            <span class="reasons__item-reason--third"> №3 </span>
-            <p class="reasons__item-text">все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reasons__item">
-            <h3 class="reasons__item-title">Красивая дорога</h3>
-            <span class="reasons__item-reason--fourth"> №4 </span>
-            <p class="reasons__item-text">ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="reasons__item">
-            <h3 class="reasons__item-title">Мало туристов</h3>
-            <span class="reasons__item-reason--fifth"> №5 </span>
-            <p class="reasons__item-text">большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
+          </fieldset>
+          <fieldset class="form__fieldset-impressions">
+            <legend class="form__fieldset-title">
+              ВАше Общее впечатление:
+            </legend>
+            <div class="form__fieldset-impressions-wrapper">
+              <label class="form__fieldset-impressions-label">
+                <input class="form__fieldset-impressions-radio" type="radio" name="chouse" checked>
+                <span class="fake-radio"></span>
+                <span class="form__fieldset-impressions-text">
+                  Скорее положительное
+                </span>
+              </label>
+              <label class="form__fieldset-impressions-label">
+                <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
+                <span class="fake-radio"></span>
+                <span class="form__fieldset-impressions-text">
+                  Скорее отрицательное
+                </span>
+              </label>
+              <label class="form__fieldset-impressions-label">
+                <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
+                <span class="fake-radio"></span>
+                <span class="form__fieldset-impressions-text">
+                  Затрудняюсь ответить
+                </span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset-attractions">
+            <legend class="form__fieldset-title">
+              посещенные достопримечательности:
+            </legend>
+            <div class="form__fieldset-attractions-wrapper">
+              <label class="form__fieldset-attractions-label">
+                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="shark" checked>
+                <span class="fake"></span>
+                <span class="form__fieldset-attractions-text">
+                  Мост Дьявола
+                </span>
+              </label>
+              <label class="form__fieldset-attractions-label">
+                <input class="form__fieldset-attractions-checkbox" type="checkbox" checked name="burn" checked>
+                <span class="fake"></span>
+                <span class="form__fieldset-attractions-text">
+                  Гора-Колокол
+                </span>
+              </label>
+              <label class="form__fieldset-attractions-label">
+                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="chucknorris">
+                <span class="fake"></span>
+                <span class="form__fieldset-attractions-text">
+                  Слайд-парк
+                </span>
+              </label>
+              <label class="form__fieldset-attractions-label">
+                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="souvenir">
+                <span class="fake"></span>
+                <span class="form__fieldset-attractions-text">
+                  Красные скалы
+                </span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset-emotion">
+            <legend class="form__title-emotion">
+              ОПИШИТЕ СВОИ ЭМОЦИИ
+              <textarea class="form__emotion-textarea" name="emotion-text" wrap="soft"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </legend>
+          </fieldset>
+          <div class="form__button-wrapper">
+            <button class="form__button">
+              <span class="form__button-text">
+                ОТПРАВИТЬ ОТЗЫВ
+              </span>
+            </button>
+            <span class="username__text-desktop"><span class="username__text-star">*</span>— обязательные для
+              заполнения поля</span>
+          </div>
+        </form>
+        </form>
       </div>
     </section>
-    <section class="searching">
-      <div class="searching__wrapper">
-        <h2 class="searching__title">
-          ЗАИНТЕРЕСОВАЛИСЬ?
-        </h2>
-        <p class="searching__text">
-          Укажите предполагаемые датыпоездки,
-          и мы покажем вам лучшиепредложения гостиниц в седоне
-        </p>
-        <a class="searching__link" href="#">
-          <span class="searching__link-text">
-            НАЙТИ гостиницу
-          </span>
-        </a>
-      </div>
-    </section>
-    <section class="map">
-      <div class="map__wrapper">
-        <iframe class="map__google-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1598517658144!5m2!1sru!2sru"
-          width="320" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
+    <section class="system-messages">
+      <div class="system-messages__wrapper">
+        <div class="system-messages__wrapper-good system-messages__wrapper-good--uncative">
+          <div class="system-messages__info">
+            <h3 class="system-messages__title">
+              Ваш отзыв отправлен!
+            </h3>
+            <p class="systems-messages__text">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+              В ближайшее время мы опубликуем его на сайте.
+            </p>
+          </div>
+          <div class="system-messages__button-wrapper">
+            <button class="system-messages__button" type="button">
+              <span class="system-messages__button-text">
+                ЗАКРЫТЬ ОКНО
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="system-messages__wrapper-error system-messages__wrapper-error--unactive">
+          <div class="system-messages__info">
+            <h3 class="system-messages__title">
+              Что-то пошло не так!
+            </h3>
+            <p class="systems-messages__text">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+          </div>
+          <div class="system-messages__button-wrapper">
+            <button class="system-messages__button" type="button">
+              <span class="system-messages__button-text">
+                OK
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
