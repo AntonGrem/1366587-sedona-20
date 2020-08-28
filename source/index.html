@@ -47,7 +47,11 @@
       </nav>
       <div class="main__wrapper-bottom">
         <a class="main__link" href="">
-          <img class="main__logo" src="img/logo-sedona-mobile.svg" alt="логотип седоны" aria-label="логотип седоны">
+          <picture>
+            <source srcset="img/logo-sedona-ds.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+            <img class="main__logo" src="img/logo-sedona-mobile.svg" alt="логотип седоны" aria-label="логотип седоны">
+          </picture>
         </a>
         <button class="main__button-open">
           <svg class="main__button-svg-open" width="23" height="22" viewBox="0 0 23 22" fill="none"

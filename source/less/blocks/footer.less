@@ -3,3 +3,25 @@
   margin: 0 auto;
   background-color: @color-white;
 }
+
+@media screen and (min-width: @tablet-width) {
+  .footer__wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    padding-bottom: 36px;
+    padding-top: 36px;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .footer__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    padding-bottom: 36px;
+    padding-top: 36px;
+  }
+}

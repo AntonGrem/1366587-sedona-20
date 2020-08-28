@@ -14,3 +14,17 @@
   color: @color-black;
   margin: 0 auto;
 }
+
+@media screen and (min-width: @tablet-width) {
+  .visit {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 54px;
+    margin-bottom: 21px;
+  }
+}
