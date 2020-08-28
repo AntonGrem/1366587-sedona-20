@@ -63,15 +63,19 @@
   <main class="main">
     <section class="intro">
       <div class="intro__wrapper">
-        <h1 class="visually-hidden">
-          Седона
-        </h1>
-        <img class="intro__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона" aria-label="Седона">
-        <div class="intro__shape"></div>
-        <div class="intro__info">
-          <h2 class="intro__info-title">Оставьте свой отзыв</h2>
-          <p class="intro__info-text">Помогите нашим отелям стать лучше!
-            оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="intro__backcolor">
+          <h1 class="visually-hidden">
+            Седона
+          </h1>
+          <div class="intro__wrapper-pic intro__wrapper-pic-photo">
+            <img class="intro__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона" aria-label="Седона">
+          </div>
+          <div class="intro__shape"></div>
+          <div class="intro__info">
+            <h2 class="intro__info-title">Оставьте свой отзыв</h2>
+            <p class="intro__info-text">Помогите нашим отелям стать лучше!
+              оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
         </div>
       </div>
     </section>
@@ -79,19 +83,22 @@
       <div class="feedback__wrapper">
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__fieldset-name">
+            <legend class="form__fieldset-title">
+              Представьтесь:
+            </legend>
             <div class="form__fieldset-name-wrapper">
-              <label class="form__fieldset-label">
-                <span class="form__text">Фамилия*</span>
-                <input class="form__placeholder" type="text" placeholder="Петр" required name="first name">
-              </label>
               <label class="form__fieldset-label">
                 <span class="form__text">Имя*</span>
                 <input class="form__placeholder form__placeholder-name" type="text" placeholder="Иванов" required
                   name="name">
               </label>
               <label class="form__fieldset-label">
-                <span class="form__text">Отчество</span>
-                <input class="form__placeholder" type="text" placeholder="Александрович" name="second name">
+                <span class="form__text form__text-fname">Фамилия*</span>
+                <input class="form__placeholder form__placeholder-fname" type="text" placeholder="Петр" required name="first name">
+              </label>
+              <label class="form__fieldset-label">
+                <span class="form__text form__text-sname">Отчество</span>
+                <input class="form__placeholder form__placeholder-sname" type="text" placeholder="Александрович" name="second name">
               </label>
             </div>
           </fieldset>
@@ -104,10 +111,19 @@
                 <span class="form__text form__text-number">Контактный телефон*:</span>
                 <input class="form__placeholder" type="text" placeholder="Введите телефон" required name="phone_number">
               </label>
+              <button class="form__button-number" tyoe="button">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
+                  </svg>
+              </button>
               <label class="form__fieldset-label form__fieldset-label-mail">
                 <span class="form__text form__text-mail">Электронная почта*:</span>
                 <input class="form__placeholder" type="text" placeholder="Введите e-mail" required name="email">
               </label>
+              <button class="form__button-email" tyoe="button">
+                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
+                  </svg>
               </button>
             </div>
           </fieldset>
@@ -118,21 +134,21 @@
             <div class="form__fieldset-impressions-wrapper">
               <label class="form__fieldset-impressions-label">
                 <input class="form__fieldset-impressions-radio" type="radio" name="chouse" checked>
-                <span class="fake-radio"></span>
+                <span class="form__fieldset-impressions-fake-radio"></span>
                 <span class="form__fieldset-impressions-text">
                   Скорее положительное
                 </span>
               </label>
               <label class="form__fieldset-impressions-label">
                 <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
-                <span class="fake-radio"></span>
+                <span class="form__fieldset-impressions-fake-radio"></span>
                 <span class="form__fieldset-impressions-text">
                   Скорее отрицательное
                 </span>
               </label>
               <label class="form__fieldset-impressions-label">
                 <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
-                <span class="fake-radio"></span>
+                <span class="form__fieldset-impressions-fake-radio"></span>
                 <span class="form__fieldset-impressions-text">
                   Затрудняюсь ответить
                 </span>
@@ -146,28 +162,28 @@
             <div class="form__fieldset-attractions-wrapper">
               <label class="form__fieldset-attractions-label">
                 <input class="form__fieldset-attractions-checkbox" type="checkbox" name="shark" checked>
-                <span class="fake"></span>
+                <span class="form__fieldset-attractions-checkbox-fake"></span>
                 <span class="form__fieldset-attractions-text">
                   Мост Дьявола
                 </span>
               </label>
               <label class="form__fieldset-attractions-label">
                 <input class="form__fieldset-attractions-checkbox" type="checkbox" checked name="burn" checked>
-                <span class="fake"></span>
+                <span class="form__fieldset-attractions-checkbox-fake"></span>
                 <span class="form__fieldset-attractions-text">
                   Гора-Колокол
                 </span>
               </label>
               <label class="form__fieldset-attractions-label">
                 <input class="form__fieldset-attractions-checkbox" type="checkbox" name="chucknorris">
-                <span class="fake"></span>
+                <span class="form__fieldset-attractions-checkbox-fake"></span>
                 <span class="form__fieldset-attractions-text">
                   Слайд-парк
                 </span>
               </label>
               <label class="form__fieldset-attractions-label">
                 <input class="form__fieldset-attractions-checkbox" type="checkbox" name="souvenir">
-                <span class="fake"></span>
+                <span class="form__fieldset-attractions-checkbox-fake"></span>
                 <span class="form__fieldset-attractions-text">
                   Красные скалы
                 </span>
@@ -187,7 +203,7 @@
                 ОТПРАВИТЬ ОТЗЫВ
               </span>
             </button>
-            <span class="username__text-desktop"><span class="username__text-star">*</span>— обязательные для
+            <span class="form__explanation">*— обязательные для
               заполнения поля</span>
           </div>
         </form>
