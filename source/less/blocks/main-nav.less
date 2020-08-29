@@ -24,6 +24,16 @@
   padding-left: 118px;
 }
 
+.main-nav__item:last-of-type {
+  background-color: @color-white;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  box-shadow: none;
+}
+
 .main-nav__link {
   text-decoration: none;
 }
@@ -45,14 +55,14 @@
   right: 19px;
 }
 
-.main__wrapper-bottom {
+/*.main__wrapper-bottom {
   background-color: @color-white;
   display: flex;
   justify-content: flex-end;
   padding-top: 17px;
   padding-right: 20px;
   padding-bottom: 17px;
-}
+}*/
 
 .main__link {
   position: absolute;
@@ -111,7 +121,7 @@
     top: 0;
   }
 
-  .main__wrapper-bottom {
+  .main-nav__item:last-of-type {
     padding: 0;
   }
 }
