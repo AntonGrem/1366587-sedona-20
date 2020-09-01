@@ -63,19 +63,23 @@
     </div>
   </header>
   <main class="main">
-    <section class="intro">
-      <div class="intro__wrapper">
-        <div class="intro__backcolor">
+    <section class="introduction">
+      <div class="introduction__wrapper">
+        <div class="introduction__backcolor">
           <h1 class="visually-hidden">
             Седона
           </h1>
-          <div class="intro__wrapper-pic intro__wrapper-pic-photo">
-            <img class="intro__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона" aria-label="Седона">
+          <div class="introduction__wrapper-pic">
+            <picture>
+              <source srcset="img/sedona_desktop_form_photo.svg" media="(min-width: 1200px)">
+              <source srcset="img/sedona_tablet_form_photo.svg" media="(min-width: 768px)">
+                <img class="introduction__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона" aria-label="Седона">
+            </picture>
           </div>
-          <div class="intro__shape"></div>
-          <div class="intro__info">
-            <h2 class="intro__info-title">Оставьте свой отзыв</h2>
-            <p class="intro__info-text">Помогите нашим отелям стать лучше!
+          <div class="introduction__shape"></div>
+          <div class="introduction__info">
+            <h2 class="introduction__info-title">Оставьте свой отзыв</h2>
+            <p class="introduction__info-text">Помогите нашим отелям стать лучше!
               оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </div>

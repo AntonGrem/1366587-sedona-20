@@ -1,0 +1,99 @@
+.introduction__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.introduction__backcolor {
+  background-color: @color-white;
+}
+
+.introduction__wrapper-pic {
+  background-color: @color-shadon-one;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position-x: 50%;
+  background-position-y: 90%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+
+.introduction__shape::before {
+  content: url("../../img/intro-triangle.svg.svg");
+}
+
+.introduction__shape {
+  margin-top: -57px;
+}
+
+.introduction__info {
+  background-color: @color-white;
+  padding-top: 32px;
+  padding-right: 18px;
+  padding-left: 17px;
+  padding-bottom: 11px;
+}
+
+.introduction__info-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @color-black;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.introduction__info-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @color-dark;
+  text-align: center;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .introduction__wrapper {
+    max-width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .introduction__wrapper-pic {
+    background-color: @color-shadon-one;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 78px;
+    padding-right: 153px;
+    padding-bottom: 65px;
+    padding-left: 153px;
+  }
+
+  .introduction__shape::before {
+    content: url("../../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .introduction__info-title {
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding-left: 165px;
+    padding-right: 172px;
+  }
+
+  .introduction__info-text {
+    line-height: 24px;
+    padding-left: 120px;
+    padding-right: 124px;
+    margin-bottom: 60px;
+  }
+}
