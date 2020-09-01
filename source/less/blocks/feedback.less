@@ -41,6 +41,8 @@
   padding: 0;
   margin-top: 20px;
   margin-bottom: 51px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__fieldset-title {
@@ -237,6 +239,8 @@
   text-align: center;
   text-transform: uppercase;
   color: @color-black;
+  padding-left: 38px;
+  padding-right: 33px;
 }
 
 .form__emotion-textarea {
@@ -255,6 +259,7 @@
   padding-bottom: 29px;
   padding-left: 21px;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .form__button-wrapper {
@@ -285,4 +290,148 @@
   text-align: center;
   text-transform: uppercase;
   color: @color-white;
+}
+
+/*.form__fieldset-emotion-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}*/
+
+@media screen and (min-width: @tablet-width) {
+  .feedback__wrapper {
+    max-width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: none;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form__placeholder-contact {
+    width: 100%;
+  }
+
+  .form__fieldset-title {
+    font-size: 21px;
+    margin-bottom: 60px;
+  }
+
+  .form__fieldset-impressions {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: none;
+    border-right: 1px solid @color-grey-another-grey;
+    padding: 0;
+    margin-bottom: 85px;
+  }
+
+  /*.form__fieldset-impressions-wrapper {
+
+  }*/
+
+  .form__fieldset-name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: none;
+  }
+
+  /*.form__fieldset-name-wrapper {
+    padding-left: 58px;
+  }*/
+
+  .form__fieldset-contact {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-bottom: none;
+    border-top: 1px solid @color-grey-another-grey;
+  }
+
+  .form__fieldset-title-border {
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+
+  .form__fieldset-label-number {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .form__button-number {
+    left: 88.5%;
+    top: 19%;
+  }
+
+  .form__button-email {
+    left: 88.5%;
+    top: 74.5%;
+  }
+
+  .form__fieldset-attractions {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-bottom: none;
+    border-top: 1px solid @color-grey-another-grey;
+  }
+
+  .form__fieldset-attractions-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 44px;
+    row-gap: 42px;
+  }
+
+  .form__fieldset-attractions-label:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .form__fieldset-emotion {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-top: 1px solid @color-grey-another-grey;
+  }
+
+  .form__emotion-textarea {
+    margin-top: 54px;
+    width: 100%;
+  }
+
+  .form__title-emotion {
+    font-size: 21px;
+    margin-left: 120px;
+  }
+
+  .form__button {
+    padding-top: 18px;
+    padding-right: 60px;
+    padding-bottom: 13px;
+    padding-left: 49px;
+    width: 324px;
+  }
+
+  .form__explanation {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: right;
+    text-transform: uppercase;
+    color: @color-dark;
+    padding-top: 15px;
+  }
 }
