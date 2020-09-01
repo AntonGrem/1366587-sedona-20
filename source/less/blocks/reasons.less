@@ -209,6 +209,18 @@
   background-size: cover
 }
 
+.reasons__item-devil {
+  width: 320px;
+  min-height: 261px;
+  background-image: url("../../img/main-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.reasons__item-title-br {
+  display: none;
+}
+
 @media screen and (min-width: @tablet-width) {
   .reasons__wrapper {
     max-width: @tablet-width;
@@ -248,16 +260,28 @@
     line-height: 26px;
   }
 
-  .reasons__item-reason--first {
+  .reasons__item-reason--first,
+  .reasons__item-reason--second,
+  .reasons__item-reason--third,
+  .reasons__item-reason--fourth,
+  .reasons__item-reason--fifth {
     padding: 0;
     margin-bottom: 33px;
   }
 
-  .reasons__item-reason--first::before {
+  .reasons__item-reason--first::before,
+  .reasons__item-reason--second::before,
+  .reasons__item-reason--third::before,
+  .reasons__item-reason--fourth::before,
+  .reasons__item-reason--fifth::before {
     left: -75%;
   }
 
-  .reasons__item-reason--first::after {
+  .reasons__item-reason--first::after,
+  .reasons__item-reason--second::after,
+  .reasons__item-reason--third::after,
+  .reasons__item-reason--fourth::after,
+  .reasons__item-reason--fifth::after {
     left: 120%;
     right: 0;
   }
@@ -272,5 +296,106 @@
     background-image: url("../../img/main-city-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover
+  }
+
+  .reasons__item-devil {
+    width: 512px;
+    min-height: 256px;
+    background-image: url("../../img/main-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+  .reasons__sublist {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-top: 57px;
+  }
+
+  .reasons__subitem:nth-of-type(2) {
+    order: 3;
+  }
+
+  .reasons__subitem {
+    width: 256px;
+    padding-top: 102px;
+    padding-bottom: 59px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .reasons__subitem--house {
+    background-image: url("../../img/icon-house_tablet.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .reasons__subitem--gift {
+    background-image: url("../../img/icon-gift_tablet.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .reasons__subitem--food {
+    background-image: url("../../img/icon-burger_tablet.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .reasons__subitem-title {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+
+  .reasons__subitem-text {
+    text-align: center;
+    padding-left: 34px;
+    padding-right: 35px;
+  }
+
+  .reasons__subitem-text-food {
+    padding-left: 53px;
+    padding-right: 46px;
+  }
+
+  .reasons__item:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+
+  .reasons__item-backgroundcolor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 256px;
+    text-align: center;
+    padding: 40px 32px 44px 32px;
+  }
+
+  .reasons__item-title-br {
+    display: block;
+  }
+
+  .reasons__item--grey {
+    width: 256px;
+    text-align: center;
+    padding: 42px 23px 50px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reasons__item--grey:not(:last-of-type) {
+    border-bottom: none;
+  }
+
+  .reasons__item-text--padding {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
