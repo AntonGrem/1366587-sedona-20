@@ -107,3 +107,51 @@
     background-color: @colro-anothe-grey;
   }
 }
+
+@media screen and (min-width: @desktop-width) {
+  .photos_wrapper {
+    max-width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  .photos__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 59px;
+  }
+
+  .photos__item:first-of-type {
+    border-top: none;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .photos__description {
+    position: relative;
+    background-color: @color-black-op;
+    margin-top: -106px;
+  }
+
+  .photos__description-title,
+  .photos_likes-number,
+  .photos__description-text {
+    color: @color-white;
+  }
+
+  .photos__description-text {
+    text-transform: inherit;
+    margin: 0;
+  }
+
+  .photos__likes-button {
+    border: none;
+    background-color: inherit;
+  }
+
+  .photos__likes-svg {
+    fill: @color-white;
+    opacity: 1;
+  }
+}
