@@ -53,3 +53,43 @@
   text-transform: uppercase;
   color: @color-white;
 }
+
+.searching__text-br {
+  display: none;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .searching__wrapper {
+    max-width: @tablet-width;
+    margin: 0 auto;
+  }
+
+  .searching__wrapper-backcolor {
+    padding-top: 58px;
+    padding-right: 150px;
+    padding-bottom: 58px;
+    padding-left: 155px;
+  }
+
+  .searching__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 43px;
+  }
+
+  .searching__text {
+    margin-bottom: 43px;
+  }
+
+  .searching__text-br {
+    display: block;
+  }
+
+  .searching__link {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 121px;
+    padding-left: 122px;
+    margin-left: 30px;
+  }
+}
