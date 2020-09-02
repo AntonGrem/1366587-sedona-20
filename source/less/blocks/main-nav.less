@@ -18,6 +18,15 @@
   box-shadow: 0px 1px 0px @color-shadon-one, inset 0px 1px 0px @color-shadon-two;
 }
 
+.main-nav__item:hover {
+  background-color: @color-blue-button-hover;
+}
+
+.main-nav__item:active {
+  background-color: @color-blue-button-down;
+  opacity: 0.3;
+}
+
 .main-nav__item:last-of-type {
   box-shadow: none;
 }
@@ -102,6 +111,16 @@
   right: 20px;
 }
 
+.main-nav__button-open:hover path,
+.main-nav__button-close:hover path {
+  opacity: 0.6;
+}
+
+.main-nav__button-open:active path,
+.main-nav__button-close:active path {
+  opacity: 0.3;
+}
+
 .main-nav__svg-closed {
   display: none;
 }
@@ -147,6 +166,26 @@
     color: @color-black;
   }
 
+  .main-nav__text:hover {
+    color: @color-blue;
+  }
+
+  .main-nav__text:active {
+    color: @color-black-op;
+  }
+
+  .main-nav__text-active {
+    color: @color-main-menu-active;
+  }
+
+  .main-nav__text-active:hover {
+    color: @color-main-menu-active-hover;
+  }
+
+  .main-nav__text-active:active {
+    color: @color-main-menu-active-down;
+  }
+
   .main-nav__item,
   .main-nav__item:first-of-type {
     box-shadow: none;
@@ -175,5 +214,12 @@
     top: 0;
   }
 
+  .main-nav__item:hover {
+    background-color: inherit;
+  }
 
+  .main-nav__item:active {
+    background-color: inherit;
+    opacity: 1;
+  }
 }
