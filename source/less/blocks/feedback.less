@@ -291,6 +291,9 @@
   text-transform: uppercase;
   color: @color-white;
 }
+.form__fieldset-title-br {
+  display: none;
+}
 
 /*.form__fieldset-emotion-wrapper {
   padding-left: 20px;
@@ -434,4 +437,90 @@
     color: @color-dark;
     padding-top: 15px;
   }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .feedback__wrapper {
+    max-width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  .form__fieldset-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .form__placeholder-name {
+    width: 350px;
+  }
+
+  .form__placeholder-fname,
+  .form__placeholder-sname {
+    width: 312px;
+  }
+
+  .form__fieldset-label-number {
+    display: block;
+  }
+
+  .form__fieldset-contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .form__text-desktop {
+    display: none;
+  }
+
+  .form__placeholder-contact {
+    width: 257px;
+  }
+
+  .form__placeholder-contact-email {
+    width: 262px;
+  }
+
+  .form__button-number {
+    left: 41%;
+    top: 0%;
+    padding-bottom: 18px;
+  }
+
+  .form__button-email {
+    padding-top: 19px;
+    padding-right: 21px;
+    padding-bottom: 19px;
+    padding-left: 21px;
+    left: 93%;
+    top: 0%;
+  }
+
+  .form__fieldset-title-br {
+    display: block;
+  }
+
+  .form__fieldset-attractions-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .form__title-emotion {
+  margin-left: 350px;
+  }
+
+  .form__button {
+    padding-top: 18px;
+    padding-right: 132px;
+    padding-bottom: 13px;
+    padding-left: 133px;
+    width: 480px;
+ }
+
+ .form__explanation {
+  margin-right: 26px;
+ }
 }
