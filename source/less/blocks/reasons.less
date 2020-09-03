@@ -4,13 +4,17 @@
 }
 
 .reasons__wrapper-backcolor {
-  background-color: @color-white;
+  background-color: @color-grey;
 }
 
 .reasons__list,
 .reasons__sublist {
   padding: 0;
   margin: 0;
+}
+
+.reasons__sublist {
+  background-color: @color-white
 }
 
 .reasons__item,
@@ -92,21 +96,21 @@
 }
 
 .reasons__subitem--house {
-  background-image: url("../../img/icon-house.svg");
+  background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-position-x: 21px;
   background-position-y: 26px;
 }
 
 .reasons__subitem--food {
-  background-image: url("../../img/icon-burger.svg.svg");
+  background-image: url("../img/icon-burger.svg.svg");
   background-repeat: no-repeat;
   background-position-x: 21px;
   background-position-y: 26px;
 }
 
 .reasons__subitem--gift {
-  background-image: url("../../img/icon-gift.svg.svg");
+  background-image: url("../img/icon-gift.svg.svg");
   background-repeat: no-repeat;
   background-position-x: 21px;
   background-position-y: 26px;
@@ -135,7 +139,7 @@
 .reasons__subitem {
   padding-top: 35px;
   padding-left: 69px;
-  padding-right: 11px;
+  padding-right: 23px;
   padding-bottom: 15px;
 }
 
@@ -199,12 +203,14 @@
 
 .reasons__item--grey:not(:last-of-type) {
   border-bottom: 1px solid @color-darker-grey;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .reasons__item-ranch {
   width: 320px;
   min-height: 261px;
-  background-image: url("../../img/main-city-mobile@1x.jpg");
+  background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -213,7 +219,7 @@
   background-color: @color-grey;
   width: 320px;
   min-height: 261px;
-  background-image: url("../../img/main-bridge-mobile@1x.jpg");
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -294,7 +300,7 @@
   .reasons__item-ranch {
     width: 512px;
     min-height: 256px;
-    background-image: url("../../img/main-city-tablet@1x.jpg");
+    background-image: url("../img/main-city-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -302,7 +308,7 @@
   .reasons__item-devil {
     width: 512px;
     min-height: 256px;
-    background-image: url("../../img/main-bridge-tablet@1x.jpg");
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -327,19 +333,19 @@
   }
 
   .reasons__subitem--house {
-    background-image: url("../../img/icon-house_tablet.svg");
+    background-image: url("../img/icon-house_tablet.svg");
     background-repeat: no-repeat;
     background-position: top;
   }
 
   .reasons__subitem--gift {
-    background-image: url("../../img/icon-gift_tablet.svg");
+    background-image: url("../img/icon-gift_tablet.svg");
     background-repeat: no-repeat;
     background-position: top;
   }
 
   .reasons__subitem--food {
-    background-image: url("../../img/icon-burger_tablet.svg");
+    background-image: url("../img/icon-burger_tablet.svg");
     background-repeat: no-repeat;
     background-position: top;
   }
@@ -393,6 +399,8 @@
 
   .reasons__item--grey:not(:last-of-type) {
     border-bottom: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .reasons__item-text--padding {
@@ -415,7 +423,7 @@
   .reasons__item-ranch {
     width: 800px;
     min-height: 256px;
-    background-image: url("../../img/main-city-desktop@1x.jpg");
+    background-image: url("../img/main-city-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -427,7 +435,7 @@
   .reasons__item-devil {
     width: 800px;
     min-height: 256px;
-    background-image: url("../../img/main-bridge-desktop@1x.jpg");
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
