@@ -118,6 +118,10 @@
     margin: 0 auto;
   }
 
+  .photos__item {
+    position: relative;
+  }
+
   .photos__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -133,9 +137,15 @@
   }
 
   .photos__description {
-    position: relative;
+    position: absolute;
+    top: 64%;
+    width: 100%;
     background-color: @color-black-op;
-    margin-top: -106px;
+    /*margin-top: -106px;*/
+  }
+
+  .photos__description-main {
+    top: 76%;
   }
 
   .photos__description-title,
