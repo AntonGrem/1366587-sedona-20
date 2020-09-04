@@ -122,25 +122,34 @@
   .video__title {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 34px;
   }
 
   .video__text {
-    padding-left: 155px;
-    padding-right: 155px;
+    padding-left: 132px;
+    padding-right: 130px;
   }
 
   .video__wrapper-fake {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 0;
+    margin-bottom: -18px;
   }
 
   .video__toggle-wrapper {
     width: 100%;
-    padding-top: 36px;
+    padding-top: 59px;
     padding-right: 41px;
-    padding-bottom: 37px;
+    padding-bottom: 33px;
     padding-left: 35px;
-    margin-top: -80px;
+    margin-top: -99px;
+  }
+
+  .video__toggler {
+    position: absolute;
+    left: 31.5%;
+    top: 42%;
   }
 
   .video__control-panel {
@@ -150,6 +159,7 @@
   .video__toddler {
     width: 389px;
     margin-right: 128px;
+    margin-bottom: 24px;
   }
 
   .video__wrapper-fake-panel {
@@ -159,8 +169,8 @@
   .video__button-replay {
     position: absolute;
     z-index: 1;
-    top: 15%;
-    left: 5%;
+    top: 22%;
+    left: 5.3%;
   }
 
   .video__replay,
@@ -172,15 +182,15 @@
   .video__button-sub {
     position: absolute;
     z-index: 1;
-    top: 15%;
-    right: 10%;
+    top: 22%;
+    right: 10.3%;
   }
 
   .vudeo__button-fullscreen {
     position: absolute;
     z-index: 1;
-    top: 15%;
-    right: 5%;
+    top: 22%;
+    right: 6%;
   }
 
   .video__button-replay:hover path,
@@ -195,6 +205,14 @@
   .vudeo__button-fullscreen:active path {
     fill: @color-white;
     opacity: 0.3;
+  }
+
+  .video__wrapper-text {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 78px;
+    padding-left: 20px;
+    padding-right: 20px
   }
 }
 
