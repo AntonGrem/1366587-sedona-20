@@ -26,7 +26,7 @@
   border: none;
   border-bottom: 1px solid @color-grey-grey;
   padding: 0;
-  padding-bottom: 31px;
+  padding-bottom: 24px;
 }
 
 .form__fieldset-attractions {
@@ -47,7 +47,7 @@
 
 .form__fieldset-title {
   padding-top: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   margin: 0 auto;
   font-style: normal;
   font-weight: bold;
@@ -97,9 +97,19 @@
   color: @color-black;
   padding-left: 22px;
   padding-top: 18px;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
   background-color: @color-dark-grey;
   border: none;
+}
+
+.form__fieldset-title-border {
+  padding-right: 5px;
+  padding-bottom: 12px;
+}
+
+.form__fieldset-label-number {
+  display: inline-block;
+  margin-bottom: 13px;
 }
 
 .form__placeholder:hover {
@@ -134,7 +144,7 @@
   padding-left: 18px;
   position: absolute;
   left: 77%;
-  top: 21%;
+  top: 17%;
 }
 
 .form__button-email {
@@ -146,14 +156,18 @@
   padding-left: 20px;
   position: absolute;
   left: 76%;
-  top: 72%;
+  top: 71%;
 }
 
 .form__text-number,
 .form__text-mail {
   display: inline-block;
-  margin-left: 26px;
-  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-bottom: 7px;
+}
+
+.form__text-number {
+  margin-bottom: 8px;
 }
 
 .form__fieldset-impressions-wrapper {
@@ -230,9 +244,13 @@
   align-items: center;
 }
 
-.form__fieldset-impressions-label:not(:last-of-type),
+.form__fieldset-impressions-label:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+
 .form__fieldset-attractions-label:not(:last-of-type) {
-  margin-bottom: 31px;
+  margin-top: 5.5px;
+  margin-bottom: 17px;
 }
 
 .form__fieldset-impressions-text,
@@ -242,7 +260,7 @@
   font-size: 18px;
   line-height: 26px;
   color: @color-black;
-  margin-left: 26px;
+  margin-left: 21px;
 }
 
 .form__fieldset-attractions-wrapper {
