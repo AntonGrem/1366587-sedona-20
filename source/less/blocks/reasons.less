@@ -32,8 +32,8 @@
 
 .reasons__item-title {
   margin: 0;
-  margin-bottom: 20px;
-  padding-top: 34px;
+  margin-bottom: 5px;
+  padding-top: 30px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -41,6 +41,10 @@
   text-transform: uppercase;
   text-align: center;
   color: @color-white;
+}
+
+.reasons__item-title--second {
+  padding-top: 41px;
 }
 
 .reasons__item-reason--first,
@@ -56,7 +60,7 @@
   padding-left: 149px;
   padding-right: 135px;
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 17px;
 }
 
 .reasons__item-reason--first::before,
@@ -92,7 +96,7 @@
   color: @color-white;
   padding-right: 8px;
   padding-left: 8px;
-  padding-bottom: 39px;
+  padding-bottom: 37px;
 }
 
 .reasons__subitem--house {
@@ -105,15 +109,16 @@
 .reasons__subitem--food {
   background-image: url("../img/icon-burger.svg.svg");
   background-repeat: no-repeat;
-  background-position-x: 21px;
-  background-position-y: 26px;
+  background-position-x: 18px;
+  background-position-y: 21px;
+  padding-bottom: 35px;
 }
 
 .reasons__subitem--gift {
   background-image: url("../img/icon-gift.svg.svg");
   background-repeat: no-repeat;
-  background-position-x: 21px;
-  background-position-y: 26px;
+  background-position-x: 22px;
+  background-position-y: 17px;
 }
 
 .reasons__subitem-title {
@@ -124,6 +129,20 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @color-black;
+}
+
+.reasons__subitem-title--house {
+  margin-bottom: 15px;
+}
+
+.reasons__subitem-title--gift {
+  margin-top: -7px;
+  margin-bottom: 16px;
+}
+
+.reasons__subitem-title--food {
+  margin-top: -8px;
+  margin-bottom: 13px;
 }
 
 .reasons__subitem-text {
@@ -140,7 +159,6 @@
   padding-top: 35px;
   padding-left: 69px;
   padding-right: 23px;
-  padding-bottom: 15px;
 }
 
 .reasons__item-backgroundcolor {
@@ -172,16 +190,30 @@
   margin-bottom: 26px;
 }
 
+.reasons__item-reason--third,
+.reasons__item-reason--fourth {
+  padding-left: 129px;
+  margin-bottom: 17px;
+}
+
+.reasons__item-reason--fifth {
+  margin-bottom: 20px;
+}
+
 .reasons__item-reason--third::before,
 .reasons__item-reason--fourth::before,
 .reasons__item-reason--fifth::before {
   content: " ";
   position: absolute;
   top: 50%;
-  left: 44%;
+  left: 40%;
   width: 10px;
   height: 1px;
   background-color: @color-black;
+}
+
+.reasons__item-reason--fifth::before {
+  left: 44%;
 }
 
 .reasons__item-reason--third::after,
@@ -190,15 +222,53 @@
   content: " ";
   position: absolute;
   top: 50%;
-  right: 40%;
+  right: 42%;
   width: 10px;
   height: 1px;
   background-color: @color-black;
 }
 
-.reasons__item-title--color,
-.reasons__item-text--color {
+.reasons__item-reason--fifth::after {
+  right: 40%;
+}
+
+.reasons__item-title--third,
+.reasons__item-text--third,
+.reasons__item-title--fourth,
+.reasons__item-text--fourth,
+.reasons__item-title--fifth,
+.reasons__item-text--fifth {
   color: @color-black;
+}
+
+.reasons__item-title--third {
+  padding-top: 25px;
+  margin-bottom: 7px;
+}
+
+.reasons__item-title--fourth {
+  padding-top: 26px;
+  margin-bottom: 7px;
+}
+
+.reasons__item-title--fifth {
+  padding-top: 25px;
+}
+
+.reasons__item-text--third {
+  padding-bottom: 23px;
+}
+
+.reasons__item-text--fourth {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+.reasons__item-text--fifth {
+  padding-bottom: 22px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .reasons__item--grey:not(:last-of-type) {
@@ -218,7 +288,7 @@
 .reasons__item-devil {
   background-color: @color-grey;
   width: 320px;
-  min-height: 261px;
+  min-height: 260px;
   background-image: url("../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
