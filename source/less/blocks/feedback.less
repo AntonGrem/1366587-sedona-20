@@ -59,8 +59,6 @@
 }
 
 .form__fieldset-name-wrapper,
-.form__fieldset-contact-wrapper,
-.form__fieldset-impressions-wrapper,
 .form__fieldset-attractions-wrapper {
   padding-right: 20px;
   padding-left: 20px;
@@ -127,7 +125,7 @@
 
 .form__placeholder-fname,
 .form__placeholder-sname {
-  width: 192px;
+  width: 177px;
 }
 
 .form__placeholder-fname {
@@ -174,6 +172,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding-left: 20px;
 }
 
 .form__fieldset-impressions-radio {
@@ -413,13 +412,29 @@
     padding-right: 60px;
   }
 
-  .form__placeholder-contact {
-    width: 100%;
+  .form__placeholder-contact,
+  .form__placeholder-contact-email {
+    width: 92%;
+  }
+
+  .form__text {
+    margin-right: 16px;
   }
 
   .form__fieldset-title {
     font-size: 21px;
-    margin-bottom: 60px;
+    margin-bottom: 37px;
+  }
+
+  .form__fieldset-title-impressions,
+  .form__fieldset-title-name {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 51px;
+  }
+
+  .form__fieldset-impressions-label:not(:last-of-type) {
+    margin-bottom: 22px;
   }
 
   .form__fieldset-impressions {
@@ -430,12 +445,12 @@
     border-bottom: none;
     border-right: 1px solid @color-grey-another-grey;
     padding: 0;
-    margin-bottom: 85px;
+    margin-bottom: 51px;
   }
 
-  /*.form__fieldset-impressions-wrapper {
-
-  }*/
+  .form__fieldset-impressions-wrapper {
+    padding-left: 0;
+  }
 
   .form__fieldset-name {
     grid-column-start: 2;
@@ -445,9 +460,10 @@
     border-bottom: none;
   }
 
-  /*.form__fieldset-name-wrapper {
+  .form__fieldset-name-wrapper {
     padding-left: 58px;
-  }*/
+    padding-right: 0;
+  }
 
   .form__fieldset-contact {
     grid-column-start: 1;
@@ -456,11 +472,16 @@
     grid-row-end: 3;
     border-bottom: none;
     border-top: 1px solid @color-grey-another-grey;
+    padding-bottom: 18px;
   }
 
   .form__fieldset-title-border {
-    padding-left: 63px;
+    padding-left: 58px;
     padding-right: 63px;
+  }
+
+  .form__fieldset-title-info {
+    margin-bottom: 7px;
   }
 
   .form__fieldset-label-number {
@@ -469,14 +490,39 @@
     margin-bottom: 25px;
   }
 
+  .form__fieldset-label-mail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .form__fieldset-contact-wrapper {
+    position: relative;
+ }
+
   .form__button-number {
-    left: 88.5%;
-    top: 19%;
+    left: 92%;
+    top: 17%;
   }
 
   .form__button-email {
-    left: 88.5%;
-    top: 74.5%;
+    padding-top: 20px;
+    left: 92%;
+    top: 72%;
+  }
+
+  .form__fieldset-title-br {
+    display: block;
+ }
+
+  .form__placeholder-name {
+    width: 212px;
+  }
+
+  .form__fieldset-label-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .form__fieldset-attractions {
@@ -491,12 +537,15 @@
   .form__fieldset-attractions-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 44px;
-    row-gap: 42px;
+    /*column-gap: 44px;*/
+    row-gap: 28px;
+    padding-left: 93px;
+    padding-bottom: 20px;
   }
 
   .form__fieldset-attractions-label:not(:last-of-type) {
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   .form__fieldset-emotion {
@@ -505,11 +554,15 @@
     grid-row-start: 4;
     grid-row-end: 5;
     border-top: 1px solid @color-grey-another-grey;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 63px;
   }
 
   .form__emotion-textarea {
     margin-top: 54px;
     width: 100%;
+    padding-top: 18px;
   }
 
   .form__title-emotion {
@@ -534,8 +587,20 @@
     text-align: right;
     text-transform: uppercase;
     color: @color-dark;
-    padding-top: 15px;
+    padding-top: 8px;
   }
+
+  .form__fieldset-title-attractions {
+    padding-top: 9px;
+    margin-bottom: 32px;
+  }
+
+  .form__button-wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+    padding-bottom: 70px;
+ }
 }
 
 @media screen and (min-width: @desktop-width) {
