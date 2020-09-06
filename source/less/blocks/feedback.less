@@ -98,6 +98,7 @@
   padding-bottom: 18px;
   background-color: @color-dark-grey;
   border: none;
+  border: 4px solid @color-dark-grey;
 }
 
 .form__fieldset-title-border {
@@ -112,6 +113,7 @@
 
 .form__placeholder:hover {
   background-color: @color-grey-grey;
+  border: 4px solid @color-grey-grey;
 }
 
 .form__placeholder:focus {
@@ -133,24 +135,24 @@
   margin-bottom: 20px;
 }
 
-.form__button-number {
+.form__pic-number {
   border: none;
   background-color: @color-more-grey;
-  padding-top: 18px;
+  padding-top: 15px;
   padding-right: 18px;
   padding-bottom: 17px;
   padding-left: 18px;
   position: absolute;
   left: 77%;
-  top: 17%;
+  top: 18%;
 }
 
-.form__button-email {
+.form__pic-email {
   border: none;
   background-color: @color-more-grey;
-  padding-top: 18px;
+  padding-top: 15px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   padding-left: 20px;
   position: absolute;
   left: 76%;
@@ -346,7 +348,7 @@
 .form__emotion-textarea {
   resize: none;
   background-color: @color-dark-grey;
-  border: none;
+  border: 4px solid @color-dark-grey;
   width: 279px;
   height: 160px;
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -361,6 +363,16 @@
   padding-left: 21px;
   margin: 0 auto;
   margin-top: 15px;
+}
+
+.form__emotion-textarea:hover {
+  background: @color-grey-grey;
+  border: 4px solid @color-grey-grey;
+}
+
+.form__emotion-textarea:focus {
+  background: @color-white;
+  border: 4px solid @color-grey-grey;
 }
 
 .form__button-wrapper {
@@ -396,6 +408,12 @@
 
 .form__fieldset-title-br {
   display: none;
+}
+
+.form__fieldset-contact-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
 }
 
 @media screen and (min-width: @tablet-width) {
@@ -500,15 +518,14 @@
     position: relative;
   }
 
-  .form__button-number {
-    left: 92%;
-    top: 17%;
+  .form__pic-number {
+    left: 89%;
+    top: 16.5%;
   }
 
-  .form__button-email {
-    padding-top: 20px;
-    left: 92%;
-    top: 72%;
+  .form__pic-email {
+    left: 89%;
+    top: 72.5%;
   }
 
   .form__fieldset-title-br {
@@ -657,6 +674,11 @@
     padding-bottom: 19px;
   }
 
+  .form__pic-number {
+    left: 37.5%;
+    top: 39.5%;
+  }
+
   .form__button-email {
     padding-top: 19px;
     padding-right: 21px;
@@ -664,6 +686,11 @@
     padding-left: 18px;
     left: 94.5%;
     top: 39%;
+  }
+
+  .form__pic-email {
+    left: 94.8%;
+    top: 39.5%;
   }
 
   .form__fieldset-title-br {

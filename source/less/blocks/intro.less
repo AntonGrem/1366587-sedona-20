@@ -1,9 +1,6 @@
 .intro__wrapper {
   max-width: 320px;
   margin: 0 auto;
-}
-
-.intro__backcolor {
   background-color: @color-white;
 }
 
@@ -23,13 +20,13 @@
   padding-left: 50px;
 }*/
 
-.intro__shape::before {
+/*.intro__shape::before {
   content: url("../img/intro-triangle.svg.svg");
 }
 
 .intro__shape {
   margin-top: -56px;
-}
+}*/
 
 .intro__info {
   background-color: @color-white;
@@ -37,6 +34,14 @@
   padding-right: 18px;
   padding-left: 17px;
   padding-bottom: 11px;
+  position: relative;
+}
+
+.intro__info::before {
+  content: url("../img/intro-triangle.svg.svg");
+  position: absolute;
+  top: -57px;
+  right: 0;
 }
 
 .intro__info-title {
@@ -87,16 +92,17 @@
     padding-left: 153px;
   }
 
-  .intro__shape::before {
+  .intro__info::before {
     content: url("../img/bg-intro-triangle-tablet.svg");
   }
 
-  .intro__info {
-    padding-top: 37px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    margin-bottom: -8px;
+
+.intro__info {
+  padding-top: 37px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin-bottom: -8px;
   }
 
   .intro__info-title {
@@ -127,7 +133,7 @@
     text-align: center;
   }
 
-  .intro__shape::before {
+  .intro__info::before {
     content: url("../img/bg-intro-triangle-desktop.svg");
   }
 
@@ -139,5 +145,5 @@
   .intro__info {
     padding-top: 47px;
     margin-bottom: -18px;
-  }
+ }
 }

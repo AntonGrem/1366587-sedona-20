@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="header">
     <div class="header__wrapper">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="" aria-label="Главная страница" title="Главная страница">
+            <a class="main-nav__link" aria-label="Главная страница" title="Главная страница">
               <span class="main-nav__text main-nav__text-active">Главная</span>
             </a>
           </li>
@@ -36,7 +36,7 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__button main-nav__button-open">
+        <button class="main-nav__button main-nav__button--open">
           <svg class="main-nav__svg main-nav__svg-closed" width="23" height="23" viewBox="0 0 23 23" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path class="main-nav__svg-close" opacity="1"
@@ -66,7 +66,6 @@
   <main class="main">
     <section class="intro">
       <div class="intro__wrapper">
-        <div class="intro__backcolor">
           <h1 class="visually-hidden">
             Добро пожаловать в великолепную седону
           </h1>
@@ -78,19 +77,17 @@
                 alt="Добро пожаловать в великолепную седону" aria-label="Добро пожаловать в великолепную седону">
             </picture>
           </div>
-          <div class="intro__shape"></div>
+         <div class="intro__shape"></div>
           <div class="intro__info">
             <h2 class="intro__info-title">Седона — небольшой городок в Аризоне,
               заслуживающий большего!</h2>
             <p class="intro__info-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
-          <div class="intro__triangular"></div>
-        </div>
       </div>
     </section>
     <section class="reasons">
       <div class="reasons__wrapper">
-        <div class="reasons__wrapper-backcolor">
+        <!--<div class="reasons__wrapper-backcolor">-->
           <ul class="reasons__list">
             <li class="reasons__item">
               <div class="reasons__item-backcolor">
@@ -99,12 +96,11 @@
                 <p class="reasons__item-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="reasons__item-ranch">
-                <!--<picture>
+                <picture>
                   <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
                   <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
-                  <img class="reasons__item-ranch-pic" src="img/main-city-mobile@1x.jpg" alt="ранчо"  >
+                  <img class="reasons__item-ranch-pic" src="img/main-city-mobile@1x.jpg" alt="ранчо">
                 </picture>
-              -->
               </div>
               <ul class="reasons__sublist">
                 <li class="reasons__subitem reasons__subitem--house">
@@ -130,7 +126,12 @@
                 <span class="reasons__item-reason--second"> №2 </span>
                 <p class="reasons__item-text reasons__item-text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <div class="reasons__item-devil"></div>
+              <!--<div class="reasons__item-devil"></div>-->
+              <picture>
+                <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="reasons__item-devil-pic" src="img/main-bridge-mobile@1x.jpg" alt="мост дьявола">
+              </picture>
             </li>
             <li class="reasons__item reasons__item--grey">
               <h3 class="reasons__item-title reasons__item-title--third">Небольшая площадь</h3>
@@ -153,7 +154,7 @@
                 гранд каньон и толпится там</p>
             </li>
           </ul>
-        </div>
+        <!--</div>-->
       </div>
     </section>
     <section class="searching">
@@ -167,9 +168,9 @@
             и мы покажем вам лучшиепредложения гостиниц в седоне
           </p>
           <button class="searching__button" type="button">
-            <span class="searching__button-text">
+           <!-- <span class="searching__button-text"> -->
               НАЙТИ гостиницу
-            </span>
+            <!--</span>-->
           </button>
         </div>
       </div>
