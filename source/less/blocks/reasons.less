@@ -11,6 +11,7 @@
 .reasons__sublist {
   padding: 0;
   margin: 0;
+  background-color: @color-grey;
 }
 
 .reasons__sublist {
@@ -483,6 +484,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    overflow: hidden;
   }
 
   .reasons__item-backgroundcolor {
@@ -531,19 +533,16 @@
     padding: 47px 50px 50px 52px;
   }
 
-  /*.reasons__item-ranch {
-    width: 800px;
-    min-height: 256px;
-    background-image: url("../img/main-city-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }*/
+  .reasons__item-ranch {
+    overflow: hidden;
+  }
 
   .reasons__item-ranch-pic {
     display: block;
     max-width: 800px;
-    height: 256px;
+    height: auto;
     object-fit: cover;
+    margin-top: -136px;
   }
 
   .reasons__subitem {
@@ -561,8 +560,9 @@
   .reasons__item-devil-pic {
     display: block;
     max-width: 800px;
-    height: 256px;
+    height: auto;
     object-fit: cover;
+    margin-bottom: -145px;
   }
 
   .reasons__item-backgroundcolor {

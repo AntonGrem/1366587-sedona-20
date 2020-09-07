@@ -122,12 +122,14 @@
 }
 
 .form__placeholder-name {
+  flex-grow: 1;
   width: 230px;
 }
 
 .form__placeholder-fname,
 .form__placeholder-sname {
   width: 177px;
+  flex-grow: 1;
 }
 
 .form__placeholder-fname {
@@ -144,7 +146,7 @@
   padding-left: 18px;
   position: absolute;
   left: 77%;
-  top: 18%;
+  top: 17.5%;
 }
 
 .form__pic-email {
@@ -156,7 +158,7 @@
   padding-left: 20px;
   position: absolute;
   left: 76%;
-  top: 71%;
+  top: 70.5%;
 }
 
 .form__text-number,
@@ -414,6 +416,12 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+}
+
+.form__fieldset-label-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 @media screen and (min-width: @tablet-width) {
