@@ -20,6 +20,16 @@
   padding-bottom: 61px;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .introduction__wrapper-pic {
+    background-color: @color-shadon-one;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 52%;
+    background-position-y: 28%;
+  }
+}
+
 .introduction__shape::before {
   content: url("../img/intro-triangle.svg.svg");
 }
@@ -113,6 +123,16 @@
     padding-left: 135px;
     padding-right: 144px;
   }
+
+  @media (min-resolution: 1.5dppx) {
+    .introduction__wrapper-pic {
+      background-color: @color-shadon-one;
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position-x: 82%;
+      background-position-y: 28%;
+    }
+  }
 }
 
 @media screen and (min-width: @desktop-width) {
@@ -153,4 +173,14 @@
   /*.introduction__info-text {
     margin-bottom: 47px;
   }*/
+
+  @media (min-resolution: 1.5dppx) {
+    .introduction__wrapper-pic {
+      background-color: @color-shadon-one;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position-x: 70%;
+      background-position-y: 39%;
+    }
+  }
 }
