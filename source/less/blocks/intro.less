@@ -15,6 +15,33 @@
   padding-left: 19px;
 }
 
+@media(min-resoluton: 2dppx) {
+  .intro__wrapper-pic {
+    background-color: @color-shadon-one;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media(min-resoluton: 2dppx) and (min-width: @tablet-width) {
+  .intro__wrapper-pic {
+    background-color: @color-shadon-one;
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media(min-resoluton: 2dppx) and (min-width: @desktop-width) {
+  .intro__wrapper-pic {
+    background-color: @color-shadon-one;
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+  }
+}
+
 /*.intro__wrapper-pic-photo {
   background-image: url("../../img/back-photo-mobile.png");
   padding-left: 50px;
@@ -91,6 +118,8 @@
     padding-bottom: 83px;
     padding-left: 153px;
   }
+
+
 
   .intro__info::before {
     content: url("../img/bg-intro-triangle-tablet.svg");
