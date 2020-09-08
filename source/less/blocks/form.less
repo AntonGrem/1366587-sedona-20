@@ -1,0 +1,768 @@
+.form {
+  border-top: 1px solid @color-grey-grey;
+}
+
+.form__fieldset-name {
+  border: none;
+  border-bottom: 1px solid @color-grey-grey;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+.form__fieldset-contact {
+  border: none;
+  border-bottom: 1px solid @color-grey-grey;
+  padding: 0;
+  padding-bottom: 28px;
+}
+
+.form__fieldset-impressions {
+  border: none;
+  border-bottom: 1px solid @color-grey-grey;
+  padding: 0;
+  padding-bottom: 24px;
+}
+
+.form__fieldset-attractions {
+  border: none;
+  border-bottom: 1px solid @color-grey-grey;
+  padding: 0;
+  padding-bottom: 26px;
+}
+
+.form__fieldset-emotion {
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 51px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__fieldset-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-black;
+}
+
+.form__fieldset-name-wrapper,
+.form__fieldset-attractions-wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.form__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @color-dark;
+  margin-right: 7px;
+}
+
+.form__text-fname {
+  margin-right: 10px;
+}
+
+.form__text-sname {
+  margin-right: 11px;
+}
+
+
+.form__placeholder {
+  width: 280px;
+  height: 58px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: @color-black;
+  padding-left: 22px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: @color-dark-grey;
+  /*border: none;*/
+  border: 4px solid @color-dark-grey;
+}
+
+.form__fieldset-title-border {
+  padding-right: 5px;
+  padding-bottom: 12px;
+}
+
+.form__placeholder:hover {
+  background-color: @color-grey-grey;
+  border: 4px solid @color-grey-grey;
+}
+
+.form__placeholder:focus {
+  background-color: @color-white;
+  border: 4px solid @color-grey-grey;
+}
+
+.form__placeholder-name {
+  flex-grow: 1;
+  width: 230px;
+}
+
+.form__placeholder-fname,
+.form__placeholder-sname {
+  width: 177px;
+  flex-grow: 1;
+}
+
+.form__placeholder-fname {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*.form__pic-number {
+  border: none;
+  background-color: @color-more-grey;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  position: absolute;
+  left: 77%;
+  top: 17.5%;
+}*/
+.form__fieldset-contact-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.form__fieldset-label-number {
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.form__fieldset-label-number::after {
+  content: url("../img/icon-phone.svg");
+  background-color: @color-more-grey;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  position: absolute;
+  left: 77%;
+  top: 17.5%;
+}
+
+.form__fieldset-label-mail::after {
+  content: url("../img/icon-mail.svg");
+  background-color: @color-more-grey;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  position: absolute;
+  left: 76%;
+  top: 70.5%;
+}
+
+/*.form__pic-email {
+  border: none;
+  background-color: @color-more-grey;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  position: absolute;
+  left: 76%;
+  top: 70.5%;
+}*/
+
+.form__text-number,
+.form__text-mail {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 7px;
+}
+
+.form__text-number {
+  margin-bottom: 8px;
+}
+
+.form__fieldset-impressions-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.form__fieldset-impressions-radio {
+  display: none;
+}
+
+.form__fieldset-impressions-fake-radio {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/radio_off.svg");
+}
+
+.form__fieldset-impressions-fake-radio:hover {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/radio_off_hover.svg");
+}
+
+.form__fieldset-impressions-fake-radio:active {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/radio_off_active.svg");
+}
+
+.form__fieldset-impressions-fake-radio::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/radio_ofn.svg");
+  opacity: 0;
+}
+
+.form__fieldset-impressions-fake-radio:hover::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/radio_ofn_hover.svg");
+  opacity: 0;
+}
+
+.form__fieldset-impressions-fake-radio:active::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/radio_ofn_active.svg");
+  opacity: 0;
+}
+
+.form__fieldset-impressions-radio:checked + .form__fieldset-impressions-fake-radio::before {
+  opacity: 1;
+}
+
+.form__fieldset-impressions-label,
+.form__fieldset-attractions-label {
+  display: flex;
+  align-items: center;
+}
+
+.form__fieldset-impressions-label:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+
+.form__fieldset-attractions-label:not(:last-of-type) {
+  margin-top: 5.5px;
+  margin-bottom: 17px;
+}
+
+.form__fieldset-impressions-text,
+.form__fieldset-attractions-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: @color-black;
+  margin-left: 21px;
+}
+
+.form__fieldset-attractions-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form__fieldset-attractions-checkbox {
+  display: none;
+}
+
+.form__fieldset-attractions-checkbox-fake {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/checkbox_off.svg");
+}
+
+.form__fieldset-attractions-checkbox-fake:hover {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/checkbox_off_hover.svg");
+}
+
+.form__fieldset-attractions-checkbox-fake:active {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/checkbox_off_active.svg");
+}
+
+.form__fieldset-attractions-checkbox-fake::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/checkbox_on.svg");
+  opacity: 0;
+}
+
+.form__fieldset-attractions-checkbox-fake:hover::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/checkbox_on_hover.svg");
+  opacity: 0;
+}
+
+.form__fieldset-attractions-checkbox-fake:active::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/checkbox_on_active.svg");
+  opacity: 0;
+}
+
+.form__fieldset-attractions-checkbox:checked + .form__fieldset-attractions-checkbox-fake::before {
+  opacity: 1;
+}
+
+.form__title-emotion {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-black;
+  padding-left: 30px;
+  padding-right: 34px;
+  padding-bottom: 2px;
+}
+
+.form__emotion-textarea {
+  resize: none;
+  background-color: @color-dark-grey;
+  border: 4px solid @color-dark-grey;
+  width: 279px;
+  height: 160px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: @color-black;
+  padding-top: 13px;
+  padding-right: 23px;
+  padding-bottom: 29px;
+  padding-left: 21px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.form__emotion-textarea:hover {
+  background: @color-grey-grey;
+  border: 4px solid @color-grey-grey;
+}
+
+.form__emotion-textarea:focus {
+  background: @color-white;
+  border: 4px solid @color-grey-grey;
+}
+
+.form__button-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -10px;
+  padding-bottom: 58px;
+}
+
+.form__explanation {
+  display: none;
+}
+
+.form__button {
+  border: none;
+  background-color: @color-blue;
+  padding-top: 18px;
+  padding-right: 33px;
+  padding-bottom: 13px;
+  padding-left: 32px;
+  width: 280px;
+}
+
+.form__button-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-white;
+}
+
+.form__fieldset-title-br {
+  display: none;
+}
+
+
+
+.form__fieldset-label-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: none;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form__placeholder-contact,
+  .form__placeholder-contact-email {
+    width: 92%;
+  }
+
+  .form__text {
+    margin-right: 16px;
+  }
+
+  .form__fieldset-title {
+    font-size: 21px;
+    margin-bottom: 37px;
+  }
+
+  .form__fieldset-title-impressions,
+  .form__fieldset-title-name {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 51px;
+  }
+
+  .form__fieldset-impressions-label:not(:last-of-type) {
+    margin-bottom: 22px;
+  }
+
+  .form__fieldset-impressions {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: none;
+    border-right: 1px solid @color-grey-another-grey;
+    padding: 0;
+    margin-bottom: 51px;
+  }
+
+  .form__fieldset-impressions-wrapper {
+    padding-left: 0;
+  }
+
+  .form__fieldset-name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: none;
+  }
+
+  .form__fieldset-name-wrapper {
+    padding-left: 58px;
+    padding-right: 0;
+  }
+
+  .form__fieldset-contact {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-bottom: none;
+    border-top: 1px solid @color-grey-another-grey;
+    padding-bottom: 18px;
+  }
+
+  .form__fieldset-title-border {
+    padding-left: 58px;
+    padding-right: 63px;
+  }
+
+  .form__fieldset-title-info {
+    margin-bottom: 7px;
+  }
+
+  .form__fieldset-label-number {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .form__fieldset-label-mail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .form__fieldset-contact-wrapper {
+    position: relative;
+  }
+
+  .form__fieldset-label-number::after {
+    left: 89%;
+    top: 16.5%;
+  }
+
+  .form__fieldset-label-mail::after {
+    left: 89%;
+    top: 72%;
+  }
+
+  .form__fieldset-title-br {
+    display: block;
+  }
+
+  .form__placeholder-name {
+    width: 212px;
+  }
+
+  .form__fieldset-label-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .form__fieldset-attractions {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-bottom: none;
+    border-top: 1px solid @color-grey-another-grey;
+  }
+
+  .form__fieldset-attractions-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*column-gap: 44px;*/
+    row-gap: 28px;
+    padding-left: 93px;
+    padding-bottom: 20px;
+  }
+
+  .form__fieldset-attractions-label:not(:last-of-type) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .form__fieldset-emotion {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-top: 1px solid @color-grey-another-grey;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 63px;
+  }
+
+  .form__emotion-textarea {
+    margin-top: 54px;
+    width: 100%;
+    padding-top: 18px;
+  }
+
+  .form__title-emotion {
+    font-size: 21px;
+    margin-left: 120px;
+  }
+
+  .form__button {
+    padding-top: 18px;
+    padding-right: 60px;
+    padding-bottom: 13px;
+    padding-left: 49px;
+    width: 324px;
+  }
+
+  .form__explanation {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: right;
+    text-transform: uppercase;
+    color: @color-dark;
+    padding-top: 8px;
+  }
+
+  .form__fieldset-title-attractions {
+    padding-top: 9px;
+    margin-bottom: 32px;
+  }
+
+  .form__button-wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__fieldset-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .form__placeholder-name {
+    width: 350px;
+  }
+
+  .form__placeholder-fname,
+  .form__placeholder-sname {
+    width: 312px;
+  }
+
+  .form__fieldset-label-number {
+    display: block;
+  }
+
+  .form__fieldset-contact-wrapper {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding-top: 54px;
+  }
+
+  .form__text-desktop {
+    display: none;
+  }
+
+  .form__placeholder-contact {
+    width: 261px;
+  }
+
+  .form__placeholder-contact-email {
+    width: 267px;
+  }
+
+  .form__button-number {
+    left: 35.7%;
+    top: 39%;
+    padding-bottom: 19px;
+  }
+
+  .form__fieldset-label-number::after {
+    left: 37.5%;
+    top: 39.5%;
+  }
+
+  .form__button-email {
+    padding-top: 19px;
+    padding-right: 21px;
+    padding-bottom: 19px;
+    padding-left: 18px;
+    left: 94.5%;
+    top: 39%;
+  }
+
+  .form__fieldset-label-mail::after {
+    left: 94%;
+    top: 39.5%;
+  }
+
+  .form__fieldset-title-br {
+    display: block;
+  }
+
+  .form__fieldset-attractions-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 1px;
+    padding-right: 0;
+  }
+
+  .form__fieldset-attractions-label:nth-of-type(2) {
+    padding-left: 18px;
+  }
+
+  .form__fieldset-attractions-label:nth-of-type(3) {
+    padding-left: 37px;
+  }
+
+  .form__fieldset-attractions-label:nth-of-type(4) {
+    padding-left: 31px;
+  }
+
+  .form__title-emotion {
+    margin-left: 350px;
+  }
+
+  .form__button {
+    padding-top: 18px;
+    padding-right: 132px;
+    padding-bottom: 13px;
+    padding-left: 133px;
+    width: 480px;
+  }
+
+  .form__fieldset-title-name {
+    padding-right: 160px;
+  }
+
+  .form__fieldset-label-mail {
+    display: block;
+  }
+
+  .form__text-number {
+    margin-left: 0;
+    margin-right: 6px;
+  }
+
+  .form__text-mail {
+    margin-right: 10px;
+    margin-left: 45px;
+  }
+
+  .form__emotion-textarea {
+    padding-left: 18px;
+  }
+}
