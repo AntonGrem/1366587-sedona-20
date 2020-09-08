@@ -4,9 +4,14 @@
 }
 
 .main-nav__list {
+  display: block;
   margin: 0;
   padding: 0;
   position: relative;
+}
+
+.main-nav__list--closed {
+  display: none;
 }
 
 .main-nav__item {
@@ -123,8 +128,12 @@
   opacity: 0.3;
 }
 
-.main-nav__svg-closed {
+.main-nav__unactive-svg {
   display: none;
+}
+
+.main-nav__active-svg {
+  display: block;
 }
 
 .main-nav__button-svg-open {
