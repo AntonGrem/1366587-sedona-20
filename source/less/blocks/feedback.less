@@ -106,11 +106,6 @@
   padding-bottom: 12px;
 }
 
-.form__fieldset-label-number {
-  display: inline-block;
-  margin-bottom: 13px;
-}
-
 .form__placeholder:hover {
   background-color: @color-grey-grey;
   border: 4px solid @color-grey-grey;
@@ -137,8 +132,30 @@
   margin-bottom: 20px;
 }
 
-.form__pic-number {
+/*.form__pic-number {
   border: none;
+  background-color: @color-more-grey;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  position: absolute;
+  left: 77%;
+  top: 17.5%;
+}*/
+.form__fieldset-contact-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.form__fieldset-label-number {
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.form__fieldset-label-number::after {
+  content: url("../img/icon-phone.svg");
   background-color: @color-more-grey;
   padding-top: 15px;
   padding-right: 18px;
@@ -149,8 +166,8 @@
   top: 17.5%;
 }
 
-.form__pic-email {
-  border: none;
+.form__fieldset-label-mail::after {
+  content: url("../img/icon-mail.svg");
   background-color: @color-more-grey;
   padding-top: 15px;
   padding-right: 20px;
@@ -160,6 +177,18 @@
   left: 76%;
   top: 70.5%;
 }
+
+/*.form__pic-email {
+  border: none;
+  background-color: @color-more-grey;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  position: absolute;
+  left: 76%;
+  top: 70.5%;
+}*/
 
 .form__text-number,
 .form__text-mail {
@@ -412,11 +441,7 @@
   display: none;
 }
 
-.form__fieldset-contact-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-}
+
 
 .form__fieldset-label-name {
   display: flex;
@@ -526,14 +551,14 @@
     position: relative;
   }
 
-  .form__pic-number {
+  .form__fieldset-label-number::after {
     left: 89%;
     top: 16.5%;
   }
 
-  .form__pic-email {
+  .form__fieldset-label-mail::after {
     left: 89%;
-    top: 72.5%;
+    top: 72%;
   }
 
   .form__fieldset-title-br {
@@ -682,7 +707,7 @@
     padding-bottom: 19px;
   }
 
-  .form__pic-number {
+  .form__fieldset-label-number::after {
     left: 37.5%;
     top: 39.5%;
   }
@@ -696,7 +721,7 @@
     top: 39%;
   }
 
-  .form__pic-email {
+  .form__fieldset-label-mail::after {
     left: 94.8%;
     top: 39.5%;
   }
