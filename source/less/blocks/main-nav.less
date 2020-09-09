@@ -12,6 +12,9 @@
 
 .main-nav__list--closed {
   display: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .main-nav__item {
@@ -189,6 +192,17 @@
     /*padding-left: 34px;*/
   }
 
+  .main-nav__list--closed {
+    background-color: @color-white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+
   .main-nav__text {
     font-size: 14px;
     line-height: 26px;
@@ -269,6 +283,17 @@
     padding-bottom: 13px;
     /*padding-left: 45px;*/
     margin: 0;
+  }
+
+  .main-nav__list--closed {
+    background-color: @color-white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 17px;
+    padding-bottom: 13px;
   }
 
   .main-nav__item,
