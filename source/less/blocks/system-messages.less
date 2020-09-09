@@ -48,7 +48,17 @@
   justify-content: center;
 }
 
-.system-messages__button {
+.system-messages__button--good {
+  border: none;
+  background-color: @color-blue;
+  padding-top: 18px;
+  padding-right: 62px;
+  padding-bottom: 14px;
+  padding-left: 60px;
+  margin: 0 auto;
+}
+
+.system-messages__button--error {
   border: none;
   background-color: @color-blue;
   padding-top: 18px;
@@ -96,7 +106,8 @@
     font-size: 21px;
   }
 
-  .system-messages__button {
+  .system-messages__button--good,
+  .system-messages__button--error {
     padding-right: 140px;
     padding-left: 139px;
   }

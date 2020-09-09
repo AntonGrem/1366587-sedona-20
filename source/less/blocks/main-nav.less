@@ -97,12 +97,8 @@
   top: 220px;
 }
 
-.main-nav__button {
-  border: none;
-  background-color: @color-white;
-}
-
 .main-nav__button--close {
+  display: block;
   border: none;
   background-color: @color-blue;
   position: absolute;
@@ -111,12 +107,23 @@
 }
 
 .main-nav__button--open {
+  display: block;
   border: none;
   background-color: @color-white;
   position: absolute;
-  bottom: 12px;
+  bottom: 15px;
   right: 15px;
 }
+
+.main-nav__button {
+  display: none;
+}
+
+/*.main-nav__button--open {
+  border: none;
+  background-color: @color-white;
+
+}*/
 
 .main-nav__button--open:hover path,
 .main-nav__button--close:hover path {
@@ -128,15 +135,19 @@
   opacity: 0.3;
 }
 
-.main-nav__unactive-svg {
+.main-nav__svg-close {
   display: none;
 }
 
-.main-nav__active-svg {
+.main-nav__svg-close--visible {
   display: block;
 }
 
-.main-nav__button-svg-open {
+.main-nav__svg-open {
+  display: block;
+}
+
+.main-nav__svg-open--unvisible {
   display: none;
 }
 
