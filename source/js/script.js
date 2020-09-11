@@ -42,7 +42,6 @@ if (messageGoodButton) {
     }
   });
 }
-<<<<<<< HEAD
 
 if (messageErrorButton) {
   messageErrorButton.addEventListener("click", function(event){
@@ -53,14 +52,3 @@ if (messageErrorButton) {
   });
 }
 
-=======
-
-if (messageErrorButton) {
-  messageErrorButton.addEventListener("click", function(event){
-    event.preventDefault()
-    if (messageError.classList.contains("system-messages__wrapper-error")){
-      messageError.classList.add("system-messages__wrapper-error--unactive");
-    }
-  });
-}
->>>>>>> module7-task1
