@@ -32,7 +32,6 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-<<<<<<< HEAD
 /*const css = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -47,9 +46,6 @@ const styles = () => {
 }
 
 exports.styles = styles;*/
-=======
-exports.styles = styles;
->>>>>>> module7-task1
 
 // Server
 
@@ -69,17 +65,10 @@ exports.server = server;
 
 // Watcher
 
-<<<<<<< HEAD
 const watcher = () => {
   gulp.watch(gulp.series("styles"));
   gulp.watch("build/*.html").on("change", sync.reload);
 }
-=======
-/*const watcher = () => {
-  gulp.watch("source/less/**//*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-}*/
->>>>>>> module7-task1
 
 exports.default = gulp.series(
   styles, server, watcher
@@ -101,10 +90,6 @@ const createWebp = () => {
 }
 exports.webp = createWebp;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> module7-task1
 /*const sprite = () => {
   return gulp.src("source/img/**//*icon-*.svg")
     .pipe(svgstore())
