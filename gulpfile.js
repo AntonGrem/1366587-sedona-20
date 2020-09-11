@@ -24,6 +24,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -31,7 +32,7 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-const css = () => {
+/*const css = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -44,7 +45,7 @@ const css = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+exports.styles = styles;*/
 
 // Server
 
@@ -65,8 +66,8 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch(gulp.series("styles"));
+  gulp.watch("build/*.html").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
@@ -89,14 +90,13 @@ const createWebp = () => {
 }
 exports.webp = createWebp;
 
-
-const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
+/*const sprite = () => {
+  return gulp.src("source/img/**//*icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
 }
-exports.sprite = sprite;
+exports.sprite = sprite;*/
 
 const copy = () => {
   return gulp.src([
@@ -121,14 +121,13 @@ const html =  () => {
     .pipe(posthtml([include()]))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
-}
+};
+exports.html=html;
 
 const build = gulp.series(
   clean,
   copy,
   styles,
-  css,
-  sprite,
   html
 );
 exports.build = build;

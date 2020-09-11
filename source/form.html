@@ -5,321 +5,323 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Form Sedona</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <div class="header__wrapper">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html" aria-label="Главная страница" title="Главная страница">
-              <span class="main-nav__text">Главная</span>
+  <div class="page__body--shadow">
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html" aria-label="Главная страница" title="Главная страница">
+                <span class="main-nav__text">Главная</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html" aria-label="Страница фотографий" title="Страница фотографий">
+                <span class="main-nav__text">Фото и видео</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" aria-label="Форма отзывов" title="Форма отзывов">
+                <span class="main-nav__text main-nav__text-active">Форма Отзыва</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"
+                title="htmlacademy">
+                <span class="main-nav__text">HTML ACADEMY</span>
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__button">
+            <svg class="main-nav__svg-close" width="23" height="23" viewBox="0 0 23 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity="1"
+                d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
+                fill="white" />
+            </svg>
+            <svg class="main-nav__svg-open" width="23" height="22" viewBox="0 0 23 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="main-nav__svg-open" opacity="1" d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+              <path class="main-nav__svg-open" opacity="1" d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+              <path class="main-nav__svg-open" opacity="1" d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+            </svg>
+          </button>
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <picture>
+                <source srcset="img/logo-sedona-ds.svg" media="(min-width: 1200px)">
+                <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+                <img class="main__link-logo" src="img/logo-sedona-mobile.svg" alt="логотип седоны"
+                  aria-label="логотип седоны">
+              </picture>
             </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html" aria-label="Страница фотографий" title="Страница фотографий">
-              <span class="main-nav__text">Фото и видео</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" aria-label="Форма отзывов" title="Форма отзывов">
-              <span class="main-nav__text main-nav__text-active">Форма Отзыва</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"
-              title="htmlacademy">
-              <span class="main-nav__text">HTML ACADEMY</span>
-            </a>
-          </li>
-        </ul>
-        <button class="main-nav__button">
-          <svg class="main-nav__svg-close" width="23" height="23" viewBox="0 0 23 23" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path  opacity="1"
-              d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
-              fill="white" />
-          </svg>
-          <svg class="main-nav__svg-open" width="23" height="22" viewBox="0 0 23 22" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path class="main-nav__svg-open" opacity="1" d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
-            <path class="main-nav__svg-open" opacity="1" d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
-            <path class="main-nav__svg-open" opacity="1" d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
-          </svg>
-        </button>
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <picture>
-              <source srcset="img/logo-sedona-ds.svg" media="(min-width: 1200px)">
-              <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
-              <img class="main__link-logo" src="img/logo-sedona-mobile.svg" alt="логотип седоны"
-                aria-label="логотип седоны">
-            </picture>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-    <section class="introduction">
-      <div class="introduction__wrapper">
-        <div class="introduction__backcolor">
-          <h1 class="visually-hidden">
-            Седона
-          </h1>
-          <div class="introduction__wrapper-pic">
-            <picture>
-              <source srcset="img/sedona_desktop_form_photo.svg" media="(min-width: 1200px)">
-              <source srcset="img/sedona_tablet_form_photo.svg" media="(min-width: 768px)">
-              <img class="introduction__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона"
-                aria-label="Седона">
-            </picture>
           </div>
-          <div class="introduction__shape"></div>
-          <div class="introduction__info introduction__info-form">
-            <h2 class="introduction__info-title">Оставьте свой отзыв</h2>
-            <p class="introduction__info-text introduction__info-text--form">Помогите нашим отелям стать лучше!
-              оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          </div>
-        </div>
+        </nav>
       </div>
-    </section>
-    <section class="feedback">
-      <div class="feedback__wrapper">
-        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form__fieldset-name">
-            <legend class="form__fieldset-title form__fieldset-title-name">
-              Представьтесь:
-            </legend>
-            <div class="form__fieldset-name-wrapper">
-              <label class="form__fieldset-label form__fieldset-label-name">
-                <span class="form__text">Имя*</span>
-                <input class="form__placeholder form__placeholder-name" type="text" placeholder="Петр" required
-                  name="name">
-              </label>
-              <label class="form__fieldset-label form__fieldset-label-name">
-                <span class="form__text form__text-fname">Фамилия*</span>
-                <input class="form__placeholder form__placeholder-fname" type="text" placeholder="Иванов" required
-                  name="first name">
-              </label>
-              <label class="form__fieldset-label form__fieldset-label-name">
-                <span class="form__text form__text-sname">Отчество</span>
-                <input class="form__placeholder form__placeholder-sname" type="text" placeholder="Александрович"
-                  name="second name">
-              </label>
+    </header>
+    <main class="main">
+      <section class="introduction">
+        <div class="introduction__wrapper">
+          <div class="introduction__backcolor">
+            <h1 class="visually-hidden">
+              Седона
+            </h1>
+            <div class="introduction__wrapper-pic">
+              <picture>
+                <source srcset="img/sedona_desktop_form_photo.svg" media="(min-width: 1200px)">
+                <source srcset="img/sedona_tablet_form_photo.svg" media="(min-width: 768px)">
+                <img class="introduction__picture" src="img/sedona_mobile_form_photo.svg" alt="Седона"
+                  aria-label="Седона">
+              </picture>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset-contact">
-            <legend class="form__fieldset-title form__fieldset-title-border form__fieldset-title-info">
-              контактная информация
-            </legend>
-            <div class="form__fieldset-contact-wrapper">
-              <label class="form__fieldset-label form__fieldset-label-number">
-                <span class="form__text form__text-number"> <span class="form__text-desktop">Контактный</span>
-                  телефон*:</span>
-                <input class="form__placeholder form__placeholder-contact" type="text" placeholder="Введите телефон"
-                  required name="phone_number">
-              </label>
-              <!--<div class="form__pic-number" tyoe="button">
+            <div class="introduction__shape"></div>
+            <div class="introduction__info introduction__info-form">
+              <h2 class="introduction__info-title">Оставьте свой отзыв</h2>
+              <p class="introduction__info-text introduction__info-text--form">Помогите нашим отелям стать лучше!
+                оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="form__fieldset-name">
+              <legend class="form__fieldset-title form__fieldset-title-name">
+                Представьтесь:
+              </legend>
+              <div class="form__fieldset-name-wrapper">
+                <label class="form__fieldset-label form__fieldset-label-name">
+                  <span class="form__text">Имя*</span>
+                  <input class="form__placeholder form__placeholder-name" type="text" placeholder="Петр" required
+                    name="name">
+                </label>
+                <label class="form__fieldset-label form__fieldset-label-name">
+                  <span class="form__text form__text-fname">Фамилия*</span>
+                  <input class="form__placeholder form__placeholder-fname" type="text" placeholder="Иванов" required
+                    name="first name">
+                </label>
+                <label class="form__fieldset-label form__fieldset-label-name">
+                  <span class="form__text form__text-sname">Отчество</span>
+                  <input class="form__placeholder form__placeholder-sname" type="text" placeholder="Александрович"
+                    name="second name">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset-contact">
+              <legend class="form__fieldset-title form__fieldset-title-border form__fieldset-title-info">
+                контактная информация
+              </legend>
+              <div class="form__fieldset-contact-wrapper">
+                <label class="form__fieldset-label form__fieldset-label-number">
+                  <span class="form__text form__text-number"> <span class="form__text-desktop">Контактный</span>
+                    телефон*:</span>
+                  <input class="form__placeholder form__placeholder-contact" type="text" placeholder="Введите телефон"
+                    required name="phone_number">
+                </label>
+                <!--<div class="form__pic-number" tyoe="button">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
                     fill="#010101" />
                 </svg>
               </div>-->
-              <label class="form__fieldset-label form__fieldset-label-mail">
-                <span class="form__text form__text-mail">Электронная почта*:</span>
-                <input class="form__placeholder form__placeholder-contact-email" type="text"
-                  placeholder="Введите e-mail" required name="email">
-              </label>
-              <!--<div class="form__pic-email" tyoe="button">
+                <label class="form__fieldset-label form__fieldset-label-mail">
+                  <span class="form__text form__text-mail">Электронная почта*:</span>
+                  <input class="form__placeholder form__placeholder-contact-email" type="text"
+                    placeholder="Введите e-mail" required name="email">
+                </label>
+                <!--<div class="form__pic-email" tyoe="button">
                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
                     fill="black" />
                 </svg>
               </div>-->
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset-impressions">
+              <legend class="form__fieldset-title form__fieldset-title-impressions">
+                ВАше Общее впечатление:
+              </legend>
+              <div class="form__fieldset-impressions-wrapper">
+                <label class="form__fieldset-impressions-label">
+                  <input class="form__fieldset-impressions-radio" type="radio" name="chouse" checked>
+                  <span class="form__fieldset-impressions-fake-radio"></span>
+                  <span class="form__fieldset-impressions-text">
+                    Скорее положительное
+                  </span>
+                </label>
+                <label class="form__fieldset-impressions-label">
+                  <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
+                  <span class="form__fieldset-impressions-fake-radio"></span>
+                  <span class="form__fieldset-impressions-text">
+                    Скорее отрицательное
+                  </span>
+                </label>
+                <label class="form__fieldset-impressions-label">
+                  <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
+                  <span class="form__fieldset-impressions-fake-radio"></span>
+                  <span class="form__fieldset-impressions-text">
+                    Затрудняюсь ответить
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset-attractions">
+              <legend class="form__fieldset-title form__fieldset-title-border form__fieldset-title-attractions">
+                посещенные <br class="form__fieldset-title-br"> достопримечательности:
+              </legend>
+              <div class="form__fieldset-attractions-wrapper">
+                <label class="form__fieldset-attractions-label">
+                  <input class="form__fieldset-attractions-checkbox" type="checkbox" name="shark" checked>
+                  <span class="form__fieldset-attractions-checkbox-fake"></span>
+                  <span class="form__fieldset-attractions-text">
+                    Мост Дьявола
+                  </span>
+                </label>
+                <label class="form__fieldset-attractions-label">
+                  <input class="form__fieldset-attractions-checkbox" type="checkbox" name="burn" checked>
+                  <span class="form__fieldset-attractions-checkbox-fake"></span>
+                  <span class="form__fieldset-attractions-text">
+                    Гора-Колокол
+                  </span>
+                </label>
+                <label class="form__fieldset-attractions-label">
+                  <input class="form__fieldset-attractions-checkbox" type="checkbox" name="chucknorris">
+                  <span class="form__fieldset-attractions-checkbox-fake"></span>
+                  <span class="form__fieldset-attractions-text">
+                    Слайд-парк
+                  </span>
+                </label>
+                <label class="form__fieldset-attractions-label">
+                  <input class="form__fieldset-attractions-checkbox" type="checkbox" name="souvenir">
+                  <span class="form__fieldset-attractions-checkbox-fake"></span>
+                  <span class="form__fieldset-attractions-text">
+                    Красные скалы
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset-emotion">
+              <legend class="form__title-emotion form__fieldset-title-border">
+                ОПИШИТЕ СВОИ ЭМОЦИИ
+              </legend>
+              <textarea class="form__emotion-textarea" name="emotion-text" wrap="soft"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </fieldset>
+            <div class="form__button-wrapper">
+              <button class="form__button">
+                <span class="form__button-text">
+                  ОТПРАВИТЬ ОТЗЫВ
+                </span>
+              </button>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset-impressions">
-            <legend class="form__fieldset-title form__fieldset-title-impressions">
-              ВАше Общее впечатление:
-            </legend>
-            <div class="form__fieldset-impressions-wrapper">
-              <label class="form__fieldset-impressions-label">
-                <input class="form__fieldset-impressions-radio" type="radio" name="chouse" checked>
-                <span class="form__fieldset-impressions-fake-radio"></span>
-                <span class="form__fieldset-impressions-text">
-                  Скорее положительное
-                </span>
-              </label>
-              <label class="form__fieldset-impressions-label">
-                <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
-                <span class="form__fieldset-impressions-fake-radio"></span>
-                <span class="form__fieldset-impressions-text">
-                  Скорее отрицательное
-                </span>
-              </label>
-              <label class="form__fieldset-impressions-label">
-                <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
-                <span class="form__fieldset-impressions-fake-radio"></span>
-                <span class="form__fieldset-impressions-text">
-                  Затрудняюсь ответить
-                </span>
-              </label>
+            <span class="form__explanation">*— обязательные поля</span>
+          </form>
+        </div>
+      </section>
+      <section class="system-messages">
+        <div class="system-messages__wrapper">
+          <div class="system-messages__wrapper-good system-messages__wrapper-good--uncative">
+            <div class="system-messages__info">
+              <h3 class="system-messages__title">
+                Ваш отзыв отправлен!
+              </h3>
+              <p class="systems-messages__text">
+                Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+                В ближайшее время мы опубликуем его на сайте.
+              </p>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset-attractions">
-            <legend class="form__fieldset-title form__fieldset-title-border form__fieldset-title-attractions">
-              посещенные <br class="form__fieldset-title-br"> достопримечательности:
-            </legend>
-            <div class="form__fieldset-attractions-wrapper">
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="shark" checked>
-                <span class="form__fieldset-attractions-checkbox-fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Мост Дьявола
+            <div class="system-messages__button-wrapper">
+              <button class="system-messages__button--good" type="button">
+                <span class="system-messages__button-text">
+                  ЗАКРЫТЬ ОКНО
                 </span>
-              </label>
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" checked name="burn" checked>
-                <span class="form__fieldset-attractions-checkbox-fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Гора-Колокол
-                </span>
-              </label>
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="chucknorris">
-                <span class="form__fieldset-attractions-checkbox-fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Слайд-парк
-                </span>
-              </label>
-              <label class="form__fieldset-attractions-label">
-                <input class="form__fieldset-attractions-checkbox" type="checkbox" name="souvenir">
-                <span class="form__fieldset-attractions-checkbox-fake"></span>
-                <span class="form__fieldset-attractions-text">
-                  Красные скалы
-                </span>
-              </label>
+              </button>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset-emotion">
-            <legend class="form__title-emotion form__fieldset-title-border">
-              ОПИШИТЕ СВОИ ЭМОЦИИ
-            </legend>
-            <textarea class="form__emotion-textarea" name="emotion-text" wrap="soft"
-              placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
-          <div class="form__button-wrapper">
-            <button class="form__button">
-              <span class="form__button-text">
-                ОТПРАВИТЬ ОТЗЫВ
-              </span>
-            </button>
           </div>
-          <span class="form__explanation">*— обязательные поля</span>
-        </form>
-        </form>
-      </div>
-    </section>
-    <section class="system-messages">
-      <div class="system-messages__wrapper">
-        <div class="system-messages__wrapper-good system-messages__wrapper-good--uncative">
-          <div class="system-messages__info">
-            <h3 class="system-messages__title">
-              Ваш отзыв отправлен!
-            </h3>
-            <p class="systems-messages__text">
-              Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-              В ближайшее время мы опубликуем его на сайте.
-            </p>
-          </div>
-          <div class="system-messages__button-wrapper">
-            <button class="system-messages__button--good" type="button">
-              <span class="system-messages__button-text">
-                ЗАКРЫТЬ ОКНО
-              </span>
-            </button>
+          <div class="system-messages__wrapper-error system-messages__wrapper-error--unactive">
+            <div class="system-messages__info">
+              <h3 class="system-messages__title">
+                Что-то пошло не так!
+              </h3>
+              <p class="systems-messages__text">
+                Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+              </p>
+            </div>
+            <div class="system-messages__button-wrapper">
+              <button class="system-messages__button--error" type="button">
+                <span class="system-messages__button-text">
+                  OK
+                </span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="system-messages__wrapper-error system-messages__wrapper-error--unactive">
-          <div class="system-messages__info">
-            <h3 class="system-messages__title">
-              Что-то пошло не так!
-            </h3>
-            <p class="systems-messages__text">
-              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-            </p>
-          </div>
-          <div class="system-messages__button-wrapper">
-            <button class="system-messages__button--error" type="button">
-              <span class="system-messages__button-text">
-                OK
-              </span>
-            </button>
-          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="visit">
+          <span class="visit__text">
+            #visitSEDONA
+          </span>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Переход в Twitter">
+                <svg class="social__twitter-svg" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="social__twitter-svg" opacity="1"
+                    d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link-facebook" href="#" aria-label="Переход в Facebook"
+                >
+                <svg class="social__facebook-svg" width="12" height="22" viewBox="0 0 12 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="social__facebook-svg" opacity="1"
+                    d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__youtube" href="#" aria-label="Переход в YouTube">
+                <svg class="social__youtube-svg" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="social__youtube-svg" opacity="1" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="develop">
+          <span class="develop__text">Разработано</span>
+          <a class="develop__link" href="https://htmlacademy.ru/intensive/htmlcss"
+            aria-label="Переход на интенсив htmlacademy">
+            <svg class="develop__svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="develop__svg"
+                d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+                fill="black" />
+            </svg>
+          </a>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="visit">
-        <span class="visit__text">
-          #visitSEDONA
-        </span>
-      </div>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Переход в Twitter" class="social__twitter">
-              <svg class="social__twitter-svg" width="17" height="17" viewBox="0 0 17 17" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="social__twitter-svg" opacity="1"
-                  d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
-                  fill="white" />
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link-facebook" href="#" aria-label="Переход в Facebook"
-              class="social__facebook">
-              <svg class="social__facebook-svg" width="12" height="22" viewBox="0 0 12 22" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="social__facebook-svg" opacity="1"
-                  d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Переход в YouTube" class="social__youtube">
-              <svg class="social__youtube-svg" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="social__youtube-svg" opacity="1" fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
-                  fill="white" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="develop">
-        <span class="develop__text">Разработано</span>
-        <a class="develop__link" href="https://htmlacademy.ru/intensive/htmlcss"
-          aria-label="Переход на интенсив htmlacademy">
-          <svg class="develop__svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path class="develop__svg"
-              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-              fill="black" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
