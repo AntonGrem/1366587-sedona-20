@@ -93,6 +93,7 @@
   background-color: @color-dark-grey;
   /*border: none;*/
   border: 4px solid @color-dark-grey;
+  outline: none;
 }
 
 .form__fieldset-title-border {
@@ -212,6 +213,7 @@
   width: 56px;
   height: 56px;
   background-image: url("../img/radio_off.svg");
+  background-repeat: no-repeat;
 }
 
 .form__fieldset-impressions-fake-radio:hover {
@@ -220,6 +222,7 @@
   width: 56px;
   height: 56px;
   background-image: url("../img/radio_off_hover.svg");
+  background-repeat: no-repeat;
 }
 
 .form__fieldset-impressions-fake-radio:active {
@@ -228,6 +231,7 @@
   width: 56px;
   height: 56px;
   background-image: url("../img/radio_off_active.svg");
+  background-repeat: no-repeat;
 }
 
 .form__fieldset-impressions-fake-radio::before {
@@ -237,6 +241,7 @@
   width: 56px;
   height: 56px;
   background-image: url("../img/radio_ofn.svg");
+  background-repeat: no-repeat;
   opacity: 0;
 }
 
@@ -247,6 +252,7 @@
   width: 56px;
   height: 56px;
   background-image: url("../img/radio_ofn_hover.svg");
+  background-repeat: no-repeat;
   opacity: 0;
 }
 
@@ -257,6 +263,7 @@
   width: 56px;
   height: 56px;
   background-image: url("../img/radio_ofn_active.svg");
+  background-repeat: no-repeat;
   opacity: 0;
 }
 
@@ -305,6 +312,7 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/checkbox_off.svg");
+  background-repeat: no-repeat;
 }
 
 .form__fieldset-attractions-checkbox-fake:hover {
@@ -313,6 +321,7 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/checkbox_off_hover.svg");
+  background-repeat: no-repeat;
 }
 
 .form__fieldset-attractions-checkbox-fake:active {
@@ -321,6 +330,7 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/checkbox_off_active.svg");
+  background-repeat: no-repeat;
 }
 
 .form__fieldset-attractions-checkbox-fake::before {
@@ -330,6 +340,7 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/checkbox_on.svg");
+  background-repeat: no-repeat;
   opacity: 0;
 }
 
@@ -340,6 +351,7 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/checkbox_on_hover.svg");
+  background-repeat: no-repeat;
   opacity: 0;
 }
 
@@ -350,6 +362,7 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/checkbox_on_active.svg");
+  background-repeat: no-repeat;
   opacity: 0;
 }
 
@@ -372,6 +385,7 @@
 
 .form__emotion-textarea {
   resize: none;
+  outline: none;
   background-color: @color-dark-grey;
   border: 4px solid @color-dark-grey;
   width: 279px;
@@ -670,7 +684,8 @@
   .form__fieldset-contact-wrapper {
     display: grid;
     grid-template-columns: 45% 55%;
-    padding-top: 54px;
+    padding: 0;
+    padding-top: 49px;
   }
 
   .form__text-desktop {
@@ -692,8 +707,8 @@
   }
 
   .form__fieldset-label-number::after {
-    left: 37.5%;
-    top: 39.5%;
+    left: 35.8%;
+    top: 37%;
   }
 
   .form__button-email {
@@ -707,7 +722,7 @@
 
   .form__fieldset-label-mail::after {
     left: 94%;
-    top: 39.5%;
+    top: 37%;
   }
 
   .form__fieldset-title-br {

@@ -34,16 +34,20 @@ buttonMenu.addEventListener("click", function(event){
 
 });
 
-messageGoodButton.addEventListener("click", function(event){
-  event.preventDefault()
-  if (messageGood.classList.contains("system-messages__wrapper-good")){
-    messageGood.classList.add("system-messages__wrapper-good--uncative");
-  }
-});
+if (messageGoodButton) {
+  messageGoodButton.addEventListener("click", function(event){
+    event.preventDefault()
+    if (messageGood.classList.contains("system-messages__wrapper-good")){
+      messageGood.classList.add("system-messages__wrapper-good--uncative");
+    }
+  });
+}
 
-messageErrorButton.addEventListener("click", function(event){
-  event.preventDefault()
-  if (messageError.classList.contains("system-messages__wrapper-error")){
-    messageError.classList.add("system-messages__wrapper-error--unactive");
-  }
-});
+if (messageErrorButton) {
+  messageErrorButton.addEventListener("click", function(event){
+    event.preventDefault()
+    if (messageError.classList.contains("system-messages__wrapper-error")){
+      messageError.classList.add("system-messages__wrapper-error--unactive");
+    }
+  });
+}

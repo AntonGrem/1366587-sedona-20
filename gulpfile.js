@@ -24,21 +24,9 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
-}
-
-const css = () => {
-  return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -64,10 +52,10 @@ exports.server = server;
 
 // Watcher
 
-const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+/*const watcher = () => {
+  gulp.watch("source/less/**//*.less", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
-}
+}*/
 
 exports.default = gulp.series(
   styles, server, watcher
@@ -90,13 +78,13 @@ const createWebp = () => {
 exports.webp = createWebp;
 
 
-const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
+/*const sprite = () => {
+  return gulp.src("source/img/**//*icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
 }
-exports.sprite = sprite;
+exports.sprite = sprite;*/
 
 const copy = () => {
   return gulp.src([
@@ -127,8 +115,6 @@ const build = gulp.series(
   clean,
   copy,
   styles,
-  css,
-  sprite,
   html
 );
 exports.build = build;
