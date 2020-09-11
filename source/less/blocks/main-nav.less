@@ -67,6 +67,10 @@
   display: inline-block;
 }
 
+.main-nav__link--academy {
+  padding-bottom: 0;
+}
+
 .main-nav__text {
   font-style: normal;
   font-weight: bold;
@@ -106,7 +110,7 @@
   background-color: @color-blue;
   position: absolute;
   top: 17px;
-  right: 20px;
+  right: 14px;
 }
 
 .main-nav__button--open {
@@ -166,7 +170,8 @@
 }
 
 @media screen and (min-width: @tablet-width) {
-  .main-nav__button--open {
+  .main-nav__button--open,
+  .main-nav__button--close {
     display: none;
   }
 
