@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <div class="page__body--shadow">
+  <div class="page__body-shadow">
     <header class="header">
       <div class="header__wrapper">
         <nav class="main-nav">
@@ -31,8 +31,8 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"
-                title="htmlacademy">
+              <a class="main-nav__link main-nav__link--academy" href="https://htmlacademy.ru/intensive/adaptive"
+                aria-label="htmlacademy" title="htmlacademy">
                 <span class="main-nav__text">HTML ACADEMY</span>
               </a>
             </li>
@@ -40,7 +40,7 @@
           <button class="main-nav__button">
             <svg class="main-nav__svg-close" width="23" height="23" viewBox="0 0 23 23" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <path  opacity="1"
+              <path opacity="1"
                 d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
                 fill="white" />
             </svg>
@@ -56,7 +56,7 @@
               <picture>
                 <source srcset="img/logo-sedona-ds.svg" media="(min-width: 1200px)">
                 <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
-                <img class="main__link-logo" src="img/logo-sedona-mobile.svg" alt="логотип седоны"
+                <img class="logo__link-img" src="img/logo-sedona-mobile.svg" alt="логотип седоны"
                   aria-label="логотип седоны">
               </picture>
             </a>
@@ -93,7 +93,7 @@
             <li class="reasons__item">
               <div class="reasons__item-backcolor">
                 <h3 class="reasons__item-title">Настоящий городок</h3>
-                <span class="reasons__item-reason--first"> №1 </span>
+                <span class="reasons__item-one"> №1 </span>
                 <p class="reasons__item-text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="reasons__item-ranch">
@@ -119,7 +119,7 @@
                 <li class="reasons__subitem reasons__subitem--gift">
                   <h4 class="reasons__subitem-title reasons__subitem-title--gift">Сувениры </h4>
                   <p class="reasons__subitem-text reasons__subitem-text--gift">Не только китайского, но<br
-                    class="reasons__item-title-br"> и местного производства!</p>
+                      class="reasons__item-title-br"> и местного производства!</p>
                 </li>
                 <li class="reasons__subitem reasons__subitem--food">
                   <h4 class="reasons__subitem-title reasons__subitem-title--food">Еда</h4>
@@ -133,7 +133,7 @@
               <div class="reasons__item-backgroundcolor">
                 <h3 class="reasons__item-title reasons__item-title--second">Там есть<br class="reasons__item-title-br">
                   Мост дьявола</h3>
-                <span class="reasons__item-reason--second"> №2 </span>
+                <span class="reasons__item-two"> №2 </span>
                 <p class="reasons__item-text reasons__item-text--second">Да, по нему можно пройти! Если вы осмелитесь,
                   конечно</p>
               </div>
@@ -155,21 +155,21 @@
             </li>
             <li class="reasons__item reasons__item--grey">
               <h3 class="reasons__item-title reasons__item-title--third">Небольшая площадь</h3>
-              <span class="reasons__item-reason--third"> №3 </span>
+              <span class="reasons__item-three"> №3 </span>
               <p class="reasons__item-text reasons__item-text--third">ВСЕ интересные места находятся очень близко
               </p>
             </li>
             <li class="reasons__item reasons__item--grey">
               <h3 class="reasons__item-title reasons__item-title--fourth">Красивая<br class="reasons__item-title-br">
                 дорога</h3>
-              <span class="reasons__item-reason--fourth"> №4 </span>
+              <span class="reasons__item-four"> №4 </span>
               <p class="reasons__item-text reasons__item-text--fourth reasons__item-text--padding">ехать в седону из
                 лас-вегаса совсем не скучно!</p>
             </li>
             <li class="reasons__item reasons__item--grey">
               <h3 class="reasons__item-title reasons__item-title--fifth">Мало<br class="reasons__item-title-br">
                 туристов</h3>
-              <span class="reasons__item-reason--fifth"> №5 </span>
+              <span class="reasons__item-five"> №5 </span>
               <p class="reasons__item-text reasons__item-text--fifth reasons__item-text--padding">большинство едет в
                 гранд каньон и толпится там</p>
             </li>
@@ -187,11 +187,9 @@
               Укажите предполагаемые даты поездки,<br class="reasons__item-title-br">
               и мы покажем вам лучшиепредложения гостиниц в седоне
             </p>
-            <button class="searching__button" type="button">
-              <!-- <span class="searching__button-text"> -->
+            <a class="searching__link" title="найти гостиницу">
               НАЙТИ гостиницу
-              <!--</span>-->
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -199,8 +197,7 @@
         <div class="map__wrapper">
           <iframe class="map__google-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1598517658144!5m2!1sru!2sru"
-            width="320" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+            width="320" height="360" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>

@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <div class="page__body--shadow">
+  <div class="page__body-shadow">
     <header class="header">
       <div class="header__wrapper">
         <nav class="main-nav">
@@ -31,8 +31,8 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"
-                title="htmlacademy">
+              <a class="main-nav__link main-nav__link--academy" href="https://htmlacademy.ru/intensive/adaptive"
+                aria-label="htmlacademy" title="htmlacademy">
                 <span class="main-nav__text">HTML ACADEMY</span>
               </a>
             </li>
@@ -56,7 +56,7 @@
               <picture>
                 <source srcset="img/logo-sedona-ds.svg" media="(min-width: 1200px)">
                 <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
-                <img class="main__link-logo" src="img/logo-sedona-mobile.svg" alt="логотип седоны"
+                <img class="logo__link-img" src="img/logo-sedona-mobile.svg" alt="логотип седоны"
                   aria-label="логотип седоны">
               </picture>
             </a>
@@ -124,25 +124,11 @@
                   <input class="form__placeholder form__placeholder-contact" type="text" placeholder="Введите телефон"
                     required name="phone_number">
                 </label>
-                <!--<div class="form__pic-number" tyoe="button">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
-                    fill="#010101" />
-                </svg>
-              </div>-->
                 <label class="form__fieldset-label form__fieldset-label-mail">
                   <span class="form__text form__text-mail">Электронная почта*:</span>
                   <input class="form__placeholder form__placeholder-contact-email" type="text"
                     placeholder="Введите e-mail" required name="email">
                 </label>
-                <!--<div class="form__pic-email" tyoe="button">
-                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
-                    fill="black" />
-                </svg>
-              </div>-->
               </div>
             </fieldset>
             <fieldset class="form__fieldset-impressions">
@@ -150,21 +136,21 @@
                 ВАше Общее впечатление:
               </legend>
               <div class="form__fieldset-impressions-wrapper">
-                <label class="form__fieldset-impressions-label">
+                <label class="form__fieldset-impressions-label" tabindex="1">
                   <input class="form__fieldset-impressions-radio" type="radio" name="chouse" checked>
                   <span class="form__fieldset-impressions-fake-radio"></span>
                   <span class="form__fieldset-impressions-text">
                     Скорее положительное
                   </span>
                 </label>
-                <label class="form__fieldset-impressions-label">
+                <label class="form__fieldset-impressions-label" tabindex="1">
                   <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
                   <span class="form__fieldset-impressions-fake-radio"></span>
                   <span class="form__fieldset-impressions-text">
                     Скорее отрицательное
                   </span>
                 </label>
-                <label class="form__fieldset-impressions-label">
+                <label class="form__fieldset-impressions-label" tabindex="1">
                   <input class="form__fieldset-impressions-radio" type="radio" name="chouse">
                   <span class="form__fieldset-impressions-fake-radio"></span>
                   <span class="form__fieldset-impressions-text">
@@ -178,28 +164,28 @@
                 посещенные <br class="form__fieldset-title-br"> достопримечательности:
               </legend>
               <div class="form__fieldset-attractions-wrapper">
-                <label class="form__fieldset-attractions-label">
+                <label class="form__fieldset-attractions-label" tabindex="1">
                   <input class="form__fieldset-attractions-checkbox" type="checkbox" name="shark" checked>
                   <span class="form__fieldset-attractions-checkbox-fake"></span>
                   <span class="form__fieldset-attractions-text">
                     Мост Дьявола
                   </span>
                 </label>
-                <label class="form__fieldset-attractions-label">
+                <label class="form__fieldset-attractions-label" tabindex="1">
                   <input class="form__fieldset-attractions-checkbox" type="checkbox" name="burn" checked>
                   <span class="form__fieldset-attractions-checkbox-fake"></span>
                   <span class="form__fieldset-attractions-text">
                     Гора-Колокол
                   </span>
                 </label>
-                <label class="form__fieldset-attractions-label">
+                <label class="form__fieldset-attractions-label" tabindex="1">
                   <input class="form__fieldset-attractions-checkbox" type="checkbox" name="chucknorris">
                   <span class="form__fieldset-attractions-checkbox-fake"></span>
                   <span class="form__fieldset-attractions-text">
                     Слайд-парк
                   </span>
                 </label>
-                <label class="form__fieldset-attractions-label">
+                <label class="form__fieldset-attractions-label" tabindex="1">
                   <input class="form__fieldset-attractions-checkbox" type="checkbox" name="souvenir">
                   <span class="form__fieldset-attractions-checkbox-fake"></span>
                   <span class="form__fieldset-attractions-text">
@@ -233,13 +219,13 @@
               <h3 class="system-messages__title">
                 Ваш отзыв отправлен!
               </h3>
-              <p class="systems-messages__text">
+              <p class="system-messages__wrapper-good-txt">
                 Спасибо за ваше участие, ваш отзыв уже поступил к нам.
                 В ближайшее время мы опубликуем его на сайте.
               </p>
             </div>
             <div class="system-messages__button-wrapper">
-              <button class="system-messages__button--good" type="button">
+              <button class="system-messages__button-good" type="button">
                 <span class="system-messages__button-text">
                   ЗАКРЫТЬ ОКНО
                 </span>
@@ -251,12 +237,12 @@
               <h3 class="system-messages__title">
                 Что-то пошло не так!
               </h3>
-              <p class="systems-messages__text">
+              <p class="system-messages__wrapper-error-text">
                 Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
               </p>
             </div>
             <div class="system-messages__button-wrapper">
-              <button class="system-messages__button--error" type="button">
+              <button class="system-messages__button-error" type="button">
                 <span class="system-messages__button-text">
                   OK
                 </span>
@@ -286,8 +272,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link-facebook" href="#" aria-label="Переход в Facebook"
-                >
+              <a class="social__link social__link-facebook" href="#" aria-label="Переход в Facebook">
                 <svg class="social__facebook-svg" width="12" height="22" viewBox="0 0 12 22" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path class="social__facebook-svg" opacity="1"
